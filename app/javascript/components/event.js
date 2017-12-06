@@ -17,7 +17,7 @@ export default class Events extends Component {
   }
 
   componentWillMount(){
-    fetch('{this.state.apiURL}&q={this.state.query}&l={this.state.location}&t={this.state.startDate}&c={this.state.catagories}&page_size={this.state.pageSize}').then((rawResponse)=>{
+    fetch(`${this.state.apiURL}&q=${this.state.query}&l=${this.state.location}&t=${this.state.startDate}&c=${this.state.catagories}&page_size=${this.state.pageSize}`).then((rawResponse)=>{
       return rawResponse.json()
     }).then((parsedResponse) => {
       console.log(parsedResponse);
