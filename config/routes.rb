@@ -1,5 +1,5 @@
 Rails.application.routes.draw do
   get 'events' => 'events_list#index'
 
-  root to: 'index#index'
+  root to: 'public#index'
 end

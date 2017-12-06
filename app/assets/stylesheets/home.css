@@ -1,0 +1,24 @@
+.section {
+  font-size: 50px;
+  background: linear-gradient(25deg, rgba(126, 161, 214, .6), rgba(208, 69, 240, .6)), url('/assets/background1.png') no-repeat;
+  background-size: cover;
+  min-height: 100vh;
+  background-position: center;
+  padding-top: 5px;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.homeSearch {
+  width: 40%;
+  font-size: .5em;
+  border: none;
+  border-radius: 5px;
+  padding: 5px;
+}
+
+input:focus {
+  outline: none;
+}
