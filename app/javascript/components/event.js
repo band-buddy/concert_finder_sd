@@ -1,11 +1,75 @@
 import React, {Component} from 'react';
 
 export default class Events extends Component {
+  constructor(props){
+    super(props)
+    this.state = {
+      apiURL:
+      'http://api.eventful.com/yaml/events/search?app_key=SBL9c4NK96vvmZKQ',
+      startDate: 'today',
+      query: 'music',
+      location: 'San+Diego',
+      catagories: 'music',
+      pageSize: '50',
+      events: []
+    }
+    console.log(this.state.events)
+  }
+
+  componentWillMount(){
+    fetch('{this.state.apiURL}&q={this.state.query}&l={this.state.location}&t={this.state.startDate}&c={this.state.catagories}&page_size={this.state.pageSize}').then((rawResponse)=>{
+      return rawResponse.json()
+    }).then((parsedResponse) => {
+      console.log(parsedResponse);
+      let eventData = parsedResponse.events
+      let newEvents = []
+      Object.keys(eventData).forEach((d)=>{
+        eventData[d].forEach((e)=>{
+          newEvents.push({
+            id: e.id,
+            title: e.title,
+            venueName: e.venue_name,
+            startTime: e.start_time,
+            venueAddress: e.venue_address,
+            cityName: e.city_name,
+            countryAbbr: e.country_abbr,
+            postalCode: e.postal_code,
+            description: e.description
+          })
+        })
+      })
+      this.setState({events: newEvents})
+      console.log(this.state.events)
+    })
+  }
 
    render(){
      return(
       <div>
-        <img src="https://www.google.com/url?sa=i&rct=j&q=&esrc=s&source=images&cd=&ved=0ahUKEwjx6ubHofTXAhUKcCYKHVybAp8QjRwIBw&url=https%3A%2F%2Fen.wikipedia.org%2Fwiki%2FTest_card&psig=AOvVaw0GLtP30Zx8P4kbgwlvO4cj&ust=1512611089222878" />
+        <table>
+          <thead className="thStyles">
+            <tr>
+              <th>Artist</th>
+              <th>Venue</th>
+              <th>Start Time</th>
+              <th>Address</th>
+              <th>Description</th>
+            </tr>
+          </thead>
+          <tbody className="tbStyles">
+            {this.state.events.map((event)=>{
+              return(
+                <tr key={event.id}>
+                  <td>{event.title}</td>
+                  <td>{event.venue_name}</td>
+                  <td>{event.start_time}</td>
+                  <td>{event.venue_address} - {event.city_name} - {event.country_abbr} - {event.postal_code}</td>
+                  <td>{event.description}</td>
+                </tr>
+              )}
+            )}
+          </tbody>
+        </table>
       </div>
      )
    }
