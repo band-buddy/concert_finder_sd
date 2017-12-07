@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
 import Header from 'components/header.js';
+import AppInfo from 'components/appinfo.js';
 
 export default class Home extends Component{
 
@@ -12,6 +13,9 @@ export default class Home extends Component{
             <form action="events" method="get">
               <input className="homeSearch" type='text' placeholder="Search for events by band name or venue"/>
             </form>
+          </div>
+          <div className="cardsSection">
+          <AppInfo />
           </div>
         </div>
     )
