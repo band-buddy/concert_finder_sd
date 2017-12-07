@@ -8,15 +8,15 @@ export default class Header extends Component {
       navbar: [
         {
           name: "About",
-          link: "#"
+          link: "/about"
         },
         {
           name: "Calendar",
-          link: "#"
+          link: "/events"
         },
         {
           name: "Login",
-          link: "#"
+          link: "/users/sign_in"
         }
       ]
     }

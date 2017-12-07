@@ -1,0 +1,57 @@
+.homeCard {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-around;
+  align-content: center;
+}
+
+.flex-card-list {
+    display:flex;
+    flex-direction: row;
+    flex-wrap:wrap;
+}
+.flex-card-listitem {
+    display:flex;
+    list-style-type: none;
+}
+.flex-card {
+    display:flex;
+    flex-direction:column;
+    background-color: #ECF0F1 ;
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+    transition: 0.3s;
+    border-radius: 5px;
+    margin: 20px 0px;
+
+}
+
+.flex-card:hover{
+    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+}
+
+.flex-card-content {
+    display:flex;
+    flex:1 0 auto; /* We have to add a basis for IE10/11 */
+    flex-direction:column;
+    padding: 2px 16px;
+}
+.flex-card-content p {
+    flex:1 0 auto; /* We have to add a basis for IE10/11 */
+}
+
+.flex-card-button {
+    background-color: #C2A5C9 ;
+    border: none;
+    color: #ECF0F1 ;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    cursor: pointer;
+    border-radius: 5px;
+}
+.flex-card-image > img {
+    border-top-right-radius: 5px;
+    border-top-left-radius: 5px;
+}

@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
 import Header from 'components/header.js';
+import Footer from 'components/footer.js' 
 
 export default class Home extends Component{
 

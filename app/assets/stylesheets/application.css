@@ -4,7 +4,10 @@
   box-sizing: border-box;
 }
 
+form {
+  margin: 100px 50px;
+}
+
 html {
   font-family: 'Rubik', sans-serif;
-  color: #FFFFFF;
 }
