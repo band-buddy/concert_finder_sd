@@ -17,7 +17,20 @@ export default class Events extends Component {
   }
 
   componentWillMount(){
-    fetch(`${this.state.apiURL}&q=${this.state.query}&l=${this.state.location}&t=${this.state.startDate}&c=${this.state.catagories}&page_size=${this.state.pageSize}`).then((rawResponse)=>{
+
+    var myHeaders = new Headers();
+
+    var myInit = {
+      method: 'GET',
+      bodyUsed: 'true',
+      headers: myHeaders,
+      mode: 'cors',
+      cache: 'default',
+      accessControlAllowOrigin: '*' // Figure out how to add to header 
+    };
+
+    fetch(`${this.state.apiURL}&q=${this.state.query}&l=${this.state.location}&t=${this.state.startDate}&c=${this.state.catagories}&page_size=${this.state.pageSize}`, myInit).then((rawResponse)=>{
+      console.log(rawResponse)
       return rawResponse.json()
     }).then((parsedResponse) => {
       console.log(parsedResponse);
