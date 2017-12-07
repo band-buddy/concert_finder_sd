@@ -10,10 +10,13 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
+
 ActiveRecord::Schema.define(version: 20171206194357) do
+
 
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
+
 
   create_table "users", force: :cascade do |t|
     t.string "email", default: "", null: false
@@ -30,6 +33,20 @@ ActiveRecord::Schema.define(version: 20171206194357) do
     t.datetime "updated_at", null: false
     t.index ["email"], name: "index_users_on_email", unique: true
     t.index ["reset_password_token"], name: "index_users_on_reset_password_token", unique: true
+
+  create_table "events", force: :cascade do |t|
+    t.string "eventful_id"
+    t.string "title"
+    t.string "venue_name"
+    t.string "venue_address"
+    t.string "city_name"
+    t.string "country_abbr"
+    t.string "postal_code"
+    t.string "description"
+    t.date "start_time"
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
+
   end
 
 end

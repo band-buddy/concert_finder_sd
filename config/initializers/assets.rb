@@ -12,6 +12,8 @@ Rails.application.config.assets.precompile += %w(navbar.css)
 Rails.application.config.assets.precompile += %w(home.css)
 Rails.application.config.assets.precompile += %w(footer.css)
 Rails.application.config.assets.precompile += %w(about.css)
+Rails.application.config.assets.precompile += %w(appinfo.css)
+
 
 # Precompile additional assets.
 # application.js, application.css, and all non-JS/CSS in the app/assets

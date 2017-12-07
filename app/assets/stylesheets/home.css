@@ -22,3 +22,13 @@
 input:focus {
   outline: none;
 }
+
+.cardsSection {
+    color: #090909;
+    padding: 40px;
+}
+
+.cardsSection h2{
+  margin-bottom: 20px;
+  font-size: 40px;
+}

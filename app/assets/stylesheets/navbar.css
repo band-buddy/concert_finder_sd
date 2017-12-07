@@ -1,4 +1,8 @@
 header {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  overflow: hidden;
   padding: 20px;
   background-color: transparent;
   border-bottom: 1px solid white;
@@ -12,8 +16,8 @@ header ul {
   flex-direction: row;
   justify-content: flex-end;
 }
-
 header li {
+  float: left;
   font-size: 20px;
   list-style-type: none;
   padding-left: 20px;
@@ -29,7 +33,6 @@ header li a:hover {
   color: #F5F543;
 }
 
-/*Add this signup button to the nav*/
 #signup {
   border: 3px solid #ecF0F1;
   padding: 5px 15px;

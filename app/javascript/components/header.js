@@ -30,10 +30,12 @@ export default class Header extends Component {
     });
     return(
       <header>
-      <ul>
-        {navItems}
-        <li id="signup"><a href="#">Sign Up</a></li>
-      </ul>
+        <nav>
+          <ul className="navBar">
+            {navItems}
+            <li id="signup"><a href="#">Sign Up</a></li>
+          </ul>
+        </nav>
       </header>
     )
   }
