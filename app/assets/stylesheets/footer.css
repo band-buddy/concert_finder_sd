@@ -1,0 +1,12 @@
+footer {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: flex-end;
+}
+
+
+.meet_terms {
+  display: flex;
+  flex-direction: column;
+}

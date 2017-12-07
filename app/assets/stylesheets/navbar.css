@@ -11,6 +11,11 @@ header {
   min-width: 100%;
 }
 
+header ul {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
+}
 header li {
   float: left;
   font-size: 20px;

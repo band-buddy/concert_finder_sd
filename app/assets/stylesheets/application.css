@@ -6,6 +6,10 @@
   -moz-osx-font-smoothing: grayscale;
 }
 
+form {
+  margin: 100px 50px;
+}
+
 html {
   font-family: 'Rubik', sans-serif;
   color: #000;
