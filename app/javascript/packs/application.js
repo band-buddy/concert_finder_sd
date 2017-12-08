@@ -5,8 +5,9 @@ import Events from 'components/event.js'
 import EventsList from 'pages/events_list.js'
 import Footer from 'components/footer.js'
 import About from 'components/about.js'
+import SignedIn from 'components/signedin.js'
 import WebpackerReact from 'webpacker-react';
 
 
 
-WebpackerReact.setup({Header, Home, AppInfo, Footer, Events, EventsList, About})
+WebpackerReact.setup({Header, Home, AppInfo, Footer, Events, EventsList, About, SignedIn})

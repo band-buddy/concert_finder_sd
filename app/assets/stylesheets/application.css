@@ -4,6 +4,7 @@
   box-sizing: border-box;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  image-rendering: crisp-edges;
 }
 
 form {
@@ -12,5 +13,5 @@ form {
 
 html {
   font-family: 'Rubik', sans-serif;
-  color: #000;
+  color: #2D2D2D;
 }

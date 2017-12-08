@@ -34,28 +34,26 @@ export default class AppInfo extends Component {
       let cardItems = this.state.info.map(function(s, i) {
         return (
             <div className={"card-align"} key={i}>
-              <ul className={"flex-card-list"}>
-                <li className={"flex-card-listitem"}>
-                  <div className={"flex-card"}>
-                    <div className={"flex-card-image"}>
-                      <img src={s.icon} alt="Show Image" />
-                    </div>
-                    <div className={"flex-card-heading"}>
-                      <h3>{s.title}</h3>
-                    <div className={"flex-card-content"}>
-                      <p>{s.description}</p>
-                      <a href={s.link} className={"flex-card-link"}>{s.linkName}</a>
-                      </div>
-                    </div>
-                  </div>
-                </li>
-              </ul>
+              <div className={"flex-card"}>
+                <div className={"flex-card-image"}>
+                  <img src={s.icon} alt="Show Image" />
+                </div>
+                <div className={"flex-card-heading"}>
+                  <h3>{s.title}</h3>
+                <div className={"flex-card-content"}>
+                  <p>{s.description}</p>
+                </div>
+                <div className={"flex-card-link"}>
+                  <a href={s.link}>{s.linkName}</a>
+                </div>
+              </div>
+              </div>
             </div>
         )
       });
       return(
         <div className="homeCard">
-          {cardItems}
+            {cardItems}
         </div>
 
       )
