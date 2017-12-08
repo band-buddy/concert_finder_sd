@@ -1,1 +1,18 @@
-<%= react_component("Home") %>
+<!DOCTYPE html>
+<html>
+  <head>
+    <header>
+      <% if user_signed_in? %>
+          <%= react_component("Header") %>
+          <button>
+            <%= link_to('Logout', destroy_user_session_path, method: :delete) %>
+          </button>
+      <% else %>
+        <%= react_component("SignedIn") %>
+      <% end %>
+    </header>
+  </head>
+  <body>
+    <%= react_component("Home") %>
+  </body>
+</html>

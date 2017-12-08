@@ -1,11 +1,10 @@
 import React, { Component } from 'react';
 
-
-export default class Header extends Component {
+export default class SignedIn extends Component {
   constructor(props) {
     super(props)
     this.state = {
-      navbar1: [
+      navbar2: [
         {
           name: "Home",
           link: "http://localhost:3000/"
@@ -19,15 +18,15 @@ export default class Header extends Component {
           link: "/events"
         },
         {
-          name: "Profile",
-          link: "#"
+          name: "Login",
+          link: "/users/sign_in"
         }
       ]
     }
   }
 
   render() {
-    let navItems = this.state.navbar1.map(function(x, i) {
+    let navItems = this.state.navbar2.map(function(x, i) {
       return (
         <li key={i}><a href={x.link}>{x.name}</a></li>
       )
@@ -36,6 +35,7 @@ export default class Header extends Component {
       <nav>
         <ul className="navBar">
           {navItems}
+          <li id="signup"><a href="#">Sign Up</a></li>
         </ul>
       </nav>
     )

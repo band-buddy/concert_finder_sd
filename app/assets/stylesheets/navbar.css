@@ -30,7 +30,23 @@ header li a {
 }
 
 header li a:hover {
-  color: #F5F543;
+  color: #2D2D2D;
+}
+
+header button {
+  font-family: 'Rubik', sans-serif;
+  background-color: transparent;
+  border: none;
+  font-size: 20px;
+}
+
+header button a {
+  color: white;
+  text-decoration: none;
+}
+
+header button a:hover {
+  color: #2D2D2D;
 }
 
 #signup {
@@ -38,4 +54,10 @@ header li a:hover {
   padding: 5px 15px;
   margin-top: -8px;
   border-radius: 5px;
+}
+
+/* Media Queries */
+
+@media screen and (min-width: 600px) {
+
 }
