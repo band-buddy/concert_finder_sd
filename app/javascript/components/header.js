@@ -16,7 +16,7 @@ export default class Header extends Component {
         },
         {
           name: "Login",
-          link: "/users/sign_in"
+          link: "/user/sign_in"
         }
       ]
     }
