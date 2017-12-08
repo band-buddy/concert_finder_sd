@@ -58,3 +58,5 @@ gem 'webpacker-react', '~>0.3.2'
 gem 'eventful_api'
 
 gem 'rack-cors', '~> 0.3.1'
+
+gem 'httparty', '~> 0.15.6'

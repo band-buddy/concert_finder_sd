@@ -1,9 +1,17 @@
+require 'httparty'
+require 'pp'
+
 class EventsListController < ApplicationController
+  include HTTParty
+  base_uri 'http://api.eventful.com/json/events/search'
   def index
     @events = Event.all
   end
+  def myResponse
+    @response =
+      HTTParty.get("http://api.eventful.com/json/events/search?app_key=SBL9c4NK96vvmZKQ&q=music&l=San+Diego&t=today&c=music&page_size=50")
+  end
 end
-
 
 # EventfulApi.configure do |config|
 #   config.application_key = SBL9c4NK96vvmZKQ

@@ -5,7 +5,7 @@ export default class Events extends Component {
     super(props)
     this.state = {
       apiURL:
-      'http://api.eventful.com/yaml/events/search?app_key=SBL9c4NK96vvmZKQ',
+      'http://api.eventful.com/json/events/search?app_key=SBL9c4NK96vvmZKQ',
       startDate: 'today',
       query: 'music',
       location: 'San+Diego',
@@ -15,47 +15,34 @@ export default class Events extends Component {
     }
   }
 
-  componentWillMount(){
+  // componentWillMount(){
 
-    var myHeaders = new Headers({
-      'Access-Control-Allow-Origin':'*'
-    });
-
-    var myInit = {
-      method: 'GET',
-      bodyUsed: 'true',
-      headers: myHeaders,
-      mode: 'cors',
-      cache: 'default',
-      // accessControlAllowOrigin: '*' // Figure out how to add to header
-    };
-
-    fetch(`${this.state.apiURL}&q=${this.state.query}&l=${this.state.location}&t=${this.state.startDate}&c=${this.state.catagories}&page_size=${this.state.pageSize}`, myInit).then((rawResponse)=>{
-      console.log(rawResponse)
-      return rawResponse.json()
-    }).then((parsedResponse) => {
-      console.log(parsedResponse);
-      let eventData = parsedResponse.events
-      let newEvents = []
-      Object.keys(eventData).forEach((d)=>{
-        eventData[d].forEach((e)=>{
-          newEvents.push({
-            id: e.id,
-            title: e.title,
-            venueName: e.venue_name,
-            startTime: e.start_time,
-            venueAddress: e.venue_address,
-            cityName: e.city_name,
-            countryAbbr: e.country_abbr,
-            postalCode: e.postal_code,
-            description: e.description
-          })
-        })
-      })
-      this.setState({events: newEvents})
-      console.log(this.state.events)
-    })
-  }
+  //   fetch(`./controllers/events_list_controller.rb`).then(function(response)=>{
+  //     console.log(response)
+  //     return response.json()
+  //   }).then((parsedResponse) => {
+  //     console.log(parsedResponse);
+  //     let eventData = parsedResponse.events
+  //     let newEvents = []
+  //     Object.keys(eventData).forEach((d)=>{
+  //       eventData[d].forEach((e)=>{
+  //         newEvents.push({
+  //           id: e.id,
+  //           title: e.title,
+  //           venueName: e.venue_name,
+  //           startTime: e.start_time,
+  //           venueAddress: e.venue_address,
+  //           cityName: e.city_name,
+  //           countryAbbr: e.country_abbr,
+  //           postalCode: e.postal_code,
+  //           description: e.description
+  //         })
+  //       })
+  //     })
+  //     this.setState({events: newEvents})
+  //     console.log(this.state.events)
+  //   })
+  // }
 
    render(){
      return(
