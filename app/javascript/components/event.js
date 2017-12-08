@@ -13,12 +13,13 @@ export default class Events extends Component {
       pageSize: '50',
       events: []
     }
-    console.log(this.state.events)
   }
 
   componentWillMount(){
 
-    var myHeaders = new Headers();
+    var myHeaders = new Headers({
+      'Access-Control-Allow-Origin':'*'
+    });
 
     var myInit = {
       method: 'GET',
@@ -26,7 +27,7 @@ export default class Events extends Component {
       headers: myHeaders,
       mode: 'cors',
       cache: 'default',
-      accessControlAllowOrigin: '*' // Figure out how to add to header 
+      // accessControlAllowOrigin: '*' // Figure out how to add to header
     };
 
     fetch(`${this.state.apiURL}&q=${this.state.query}&l=${this.state.location}&t=${this.state.startDate}&c=${this.state.catagories}&page_size=${this.state.pageSize}`, myInit).then((rawResponse)=>{

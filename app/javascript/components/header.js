@@ -19,8 +19,8 @@ export default class Header extends Component {
           link: "/events"
         },
         {
-          name: "Profile",
-          link: "#"
+          name: "Login",
+          link: "/user/sign_in"
         }
       ]
     }
