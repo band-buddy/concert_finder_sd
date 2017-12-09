@@ -47,6 +47,7 @@ export default class Events extends Component {
    render(){
      return(
       <div>
+        <h1>Test2</h1>
         <table>
           <thead className="thStyles">
             <tr>

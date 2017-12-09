@@ -2,14 +2,14 @@ require 'httparty'
 require 'pp'
 
 class EventsListController < ApplicationController
-  include HTTParty
-  base_uri 'http://api.eventful.com/json/events/search'
-  def index
-    @events = Event.all
+
+  def events
+    @events = Event.new
+    pp Event.for params[:keyword_search]
   end
-  def myResponse
-    @response =
-      HTTParty.get("http://api.eventful.com/json/events/search?app_key=SBL9c4NK96vvmZKQ&q=music&l=San+Diego&t=today&c=music&page_size=50")
+
+  def index
+    @events = Event.new
   end
 end
 

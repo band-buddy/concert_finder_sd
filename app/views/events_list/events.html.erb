@@ -1,2 +1,6 @@
 <h1>Test1</h1>
 <%= react_component('EventsList') %>
+<form action="/events" method="get">
+  <input type="text" name="keyword_search" placeholder="Search"/>
+  <button type="submit">Submit</button>
+</form>
