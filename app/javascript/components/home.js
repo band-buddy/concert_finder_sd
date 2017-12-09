@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 import Header from 'components/header.js';
-import Footer from 'components/footer.js' 
+import Footer from 'components/footer.js'
 import AppInfo from 'components/appinfo.js';
 
 export default class Home extends Component{
@@ -9,7 +9,7 @@ export default class Home extends Component{
     return(
         <div>
           <div className="section">
-            <p>Find the best concerts in San Diego.<br />
+            <p className="fadeText">Find the best concerts in San Diego.<br />
             Meet new friends.</p>
             <form action="events" method="get">
               <input className="homeSearch" type='text' placeholder="Search for events by band name or venue"/>
