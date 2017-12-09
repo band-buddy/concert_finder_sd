@@ -31,6 +31,7 @@ ActiveRecord::Schema.define(version: 20171206212412) do
     t.datetime "updated_at", null: false
   end
 
+
   create_table "profiles", force: :cascade do |t|
     t.string "username"
     t.string "first_name"
@@ -39,6 +40,7 @@ ActiveRecord::Schema.define(version: 20171206212412) do
     t.date "date_of_birth"
     t.string "description"
   end
+
 
   create_table "users", force: :cascade do |t|
     t.string "email", default: "", null: false

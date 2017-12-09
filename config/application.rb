@@ -20,11 +20,10 @@ module ConcertFinderSd
   class Application < Rails::Application
     # Initialize configuration defaults for originally generated Rails version.
     config.load_defaults 5.1
-
-    config.action_dispatch.default_headers = {
-    'Access-Control-Allow-Origin' => 'http://api.eventful.com/yaml/events/search',
-    'Access-Control-Request-Method' => %w{GET POST OPTIONS}.join(",")
-  }
+  #   config.action_dispatch.default_headers = {
+  #   'Access-Control-Allow-Origin' => 'http://api.eventful.com/json/events/search',
+  #   'Access-Control-Request-Method' => %w{GET POST OPTIONS}.join(",")
+  # }
 
     # Settings in config/environments/* take precedence over those specified here.
     # Application configuration should go into files in config/initializers

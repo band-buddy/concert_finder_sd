@@ -1,9 +1,17 @@
+require 'httparty'
+require 'pp'
+
 class EventsListController < ApplicationController
+
+  def events
+    @events = Event.new
+    pp Event.for params[:keyword_search]
+  end
+
   def index
-    @events = Event.all
+    @events = Event.new
   end
 end
-
 
 # EventfulApi.configure do |config|
 #   config.application_key = SBL9c4NK96vvmZKQ
