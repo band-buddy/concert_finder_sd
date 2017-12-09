@@ -1,10 +1,12 @@
 Rails.application.routes.draw do
 
+  devise_for :user, :controller => { registrations: 'registrations' }
+
   get '/users/index' => 'users#index'
 
   get '/profile' => 'profile#index'
 
-  devise_for :user
+  get '/profile/update' => 'profile#update'
 
   root to: 'public#index'
 

@@ -19,7 +19,7 @@ export default class SignedIn extends Component {
         },
         {
           name: "Login",
-          link: "/users/sign_in"
+          link: "/user/sign_in"
         }
       ]
     }
@@ -35,7 +35,7 @@ export default class SignedIn extends Component {
       <nav>
         <ul className="navBar">
           {navItems}
-          <li id="signup"><a href="#">Sign Up</a></li>
+          <li id="signup"><a href="/user/sign_up">Sign Up</a></li>
         </ul>
       </nav>
     )

@@ -3,4 +3,8 @@ class ProfileController < ApplicationController
   def index
     render 'profile.html.erb'
   end
+
+  def update
+    render 'update.html.erb'
+  end
 end
