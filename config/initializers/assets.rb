@@ -14,6 +14,7 @@ Rails.application.config.assets.precompile += %w(footer.css)
 Rails.application.config.assets.precompile += %w(about.css)
 Rails.application.config.assets.precompile += %w(appinfo.css)
 Rails.application.config.assets.precompile += %w(profile.css)
+Rails.application.config.assets.precompile += %w(update.css)
 
 
 # Precompile additional assets.

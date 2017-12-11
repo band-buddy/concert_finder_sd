@@ -19,7 +19,7 @@ export default class SignedIn extends Component {
         },
         {
           name: "Login",
-          link: "/user/sign_in"
+          link: "/user/login"
         }
       ]
     }

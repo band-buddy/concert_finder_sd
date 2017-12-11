@@ -1,10 +1,12 @@
 Rails.application.routes.draw do
 
-  devise_for :user, :controller => { registrations: 'registrations' }
+  devise_for :user, :controller => { registrations: 'registrations' }, path_names: {sign_in: "login"}
 
   get '/users/index' => 'users#index'
 
   get '/profile' => 'profile#index'
+
+  post '/profile' => 'profile#index'
 
   get '/profile/update' => 'profile#update'
 
