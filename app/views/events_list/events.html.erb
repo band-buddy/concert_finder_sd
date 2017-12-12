@@ -1,6 +1,6 @@
 <h1>Events</h1>
 <form action="/events" method="get">
-  <input type="text" name="keyword_search" placeholder="Search"/>
-  <button type="submit">Submit</button>
+  <input id="term" type="text" name="keyword_search" placeholder="Search"/>
+  <button onclick="updateSearch()" type="submit">Submit</button>
 </form>
-<%= react_component('EventsList', events: @events) %>
+<%= react_component('Events', default: @default, events: @events) %>
