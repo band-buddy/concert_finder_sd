@@ -5,12 +5,9 @@ class EventsListController < ApplicationController
 
   def events
     @events = Event.new
-
-    if params.has_key?(:keyword_search)
-      @events = Event.for params[:keyword_search]
-    end
-
-    pp Event.for params[:keyword_search]
+    @default = Event.new
+    @default = Event.for("Cafe21").parsed_response["events"]["event"]
+    @events = Event.for(params[:keyword_search]).parsed_response["events"]["event"]
   end
 
   def index
