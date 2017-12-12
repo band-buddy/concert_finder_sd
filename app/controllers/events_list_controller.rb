@@ -5,11 +5,15 @@ class EventsListController < ApplicationController
 
   def events
     @events = Event.new
+
+    if params.has_key?(:keyword_search)
+      @events = Event.for params[:keyword_search]
+    end
+
     pp Event.for params[:keyword_search]
   end
 
   def index
-    @events = Event.new
   end
 end
 
