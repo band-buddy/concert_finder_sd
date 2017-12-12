@@ -1,0 +1,22 @@
+.update_profile {
+  background-color: #96BDBF;
+}
+
+.update_form {
+  display: flex;
+  flex-flow: column nowrap;
+}
+
+.update_form input {
+    padding: 10px;
+    margin: 6px;
+    color: white;
+    background-color: rgb(107,161,164);
+    border: none;
+    font-size: 16px;
+    border-radius: 5px;
+}
+
+.update_form input::placeholder {
+  color: white;
+}

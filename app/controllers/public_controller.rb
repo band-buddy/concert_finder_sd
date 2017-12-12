@@ -5,4 +5,8 @@ class PublicController < ApplicationController
 
     def about
     end
+
+    def update
+    
+    end
 end

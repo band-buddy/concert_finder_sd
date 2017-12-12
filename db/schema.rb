@@ -10,6 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
+
 ActiveRecord::Schema.define(version: 20171207222358) do
 
   # These are extensions that must be enabled in order to support this database
@@ -37,7 +38,7 @@ ActiveRecord::Schema.define(version: 20171207222358) do
     t.date "date_of_birth"
     t.string "description"
   end
-
+  
   create_table "users", force: :cascade do |t|
     t.string "email", default: "", null: false
     t.string "encrypted_password", default: "", null: false
@@ -51,6 +52,12 @@ ActiveRecord::Schema.define(version: 20171207222358) do
     t.inet "last_sign_in_ip"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
+    t.string "username"
+    t.string "first_name"
+    t.string "last_name"
+    t.date "date_of_birth"
+    t.string "description"
+    t.string "phone_number"
     t.index ["email"], name: "index_users_on_email", unique: true
     t.index ["reset_password_token"], name: "index_users_on_reset_password_token", unique: true
   end
