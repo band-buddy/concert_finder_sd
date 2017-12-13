@@ -5,3 +5,15 @@
 main {
   padding-top: 80px;
 }
+
+.edit {
+  display: flex;
+  flex-flow: column nowrap;
+  padding: 5px;
+  margin: 4px;
+  color: white;
+  background-color: #2D2D2D;
+  border: none;
+  font-size: 16px;
+  border-radius: 5px;
+}

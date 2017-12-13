@@ -14,17 +14,17 @@
     <main>
       <h1>Welcome</h1>
 
-       <%= current_user.username %>
-       <%= current_user.first_name %>
-       <%= current_user.last_name %>
-       <%= current_user.date_of_birth %>
-       <%= current_user.phone_number %>
-       <%= current_user.email %>
-       <%= current_user.description %>
+      <%= link_to image_tag(@user.image.url(:large)), @user.image.url %> <br />
+      <%= current_user.username %>
+      <%= current_user.first_name %>
+      <%= current_user.last_name %>
+      <%= current_user.date_of_birth %>
+      <%= current_user.phone_number %>
+      <%= current_user.email %>
+      <%= current_user.description %>
 
-
-      <form class="edit" action="/profile/update" method="get">
-        <input type="submit" value="Edit Profile">
+      <form action="/profile/update" method="get">
+        <input class="edit" type="submit" value="Edit Profile">
       </form>
     </main>
   </body>
