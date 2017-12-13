@@ -1,0 +1,53 @@
+#login_background {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  height: 75vh;
+}
+
+.login_container {
+  position: relative;
+  margin: 0 auto;
+  background: #ecf0f1;
+  width: 350px;
+  border-radius: 5px;
+  box-shadow: 3px 3px 10px #333;
+  padding: 15px;
+  background-color: #242424;
+}
+
+.login_page {
+ text-align: center;
+ background: linear-gradient(25deg, rgba(24, 24, 24, .8), rgba(24, 24, 24, .8)), url('/assets/concert.jpg') no-repeat;
+ background-repeat: no-repeat;
+ background-size: cover;
+ color: black;
+}
+
+.login-username input {
+  margin: auto;
+  font-size: 16px;
+  padding: 5px;
+  width: 200px;
+  display: block;
+  border-radius: 5px;
+  border: none;
+  border-bottom: 1px solid #757575;
+  text-decoration: none;
+}
+
+.login-password input {
+  margin: auto;
+  font-size: 16px;
+  padding: 5px;
+  width: 200px;
+  display: block;
+  border-radius: 5px;
+  border: none;
+  border-bottom: 1px solid #757575;
+  text-decoration: none;
+}
+
+input:-webkit-autofill {
+    -webkit-box-shadow: 0 0 0 30px white inset;
+}

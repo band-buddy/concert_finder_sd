@@ -2,7 +2,7 @@ footer {
   display: flex;
   flex-direction: column;
   justify-content: center;
-  align-items: center;
+  text-align: center;
   background-color: #2D2D2D;
   color: white;
   padding: 20px
