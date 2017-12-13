@@ -8,6 +8,8 @@ Rails.application.routes.draw do
 
   post '/profile' => 'profile#index'
 
+  patch '/profile' => 'profile#index'
+
   get '/profile/update' => 'profile#update'
 
   root to: 'public#index'

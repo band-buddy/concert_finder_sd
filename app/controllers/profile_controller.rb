@@ -32,11 +32,15 @@ class ProfileController < ApplicationController
       @user.update(description: params[:description])
       @user.save
     end
+    if params.has_key?(:image)
+     @user.update(image: params[:image])
+     @user.save
+   end
     render 'profile.html.erb'
   end
 
   def update
-
+    @user = current_user
     render 'update.html.erb'
   end
 
