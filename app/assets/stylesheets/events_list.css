@@ -3,16 +3,14 @@ table {
   display: flex;
   align-items: center;
   flex-direction: column;
-  
 }
 
 .thStyles {
   border: 2px solid black;
 }
 
-
 td {
   border: 1px solid black;
   margin: 0px;
-  padding: 0px;
+  padding: 2px;
 }

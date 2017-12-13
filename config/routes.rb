@@ -16,4 +16,5 @@ Rails.application.routes.draw do
 
   get '/about' => 'public#about'
 
+  get "*path", to: redirect('/')
 end
