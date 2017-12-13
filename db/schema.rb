@@ -10,11 +10,9 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-<<<<<<< HEAD
-ActiveRecord::Schema.define(version: 20171212181612) do
-=======
-ActiveRecord::Schema.define(version: 20171208194006) do
->>>>>>> b23e10e1fdffa07b1580b7afe2fc44c220888ad9
+
+ActiveRecord::Schema.define(version: 20171213194703) do
+
 
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
@@ -33,8 +31,7 @@ ActiveRecord::Schema.define(version: 20171208194006) do
     t.datetime "updated_at", null: false
   end
 
-<<<<<<< HEAD
-=======
+
   create_table "profiles", force: :cascade do |t|
     t.string "username"
     t.string "first_name"
@@ -44,7 +41,6 @@ ActiveRecord::Schema.define(version: 20171208194006) do
     t.string "description"
   end
 
->>>>>>> b23e10e1fdffa07b1580b7afe2fc44c220888ad9
   create_table "users", force: :cascade do |t|
     t.string "email", default: "", null: false
     t.string "encrypted_password", default: "", null: false
@@ -62,13 +58,17 @@ ActiveRecord::Schema.define(version: 20171208194006) do
     t.string "first_name"
     t.string "last_name"
     t.date "date_of_birth"
-<<<<<<< HEAD
-    t.string "description"
-    t.string "phone_number"
+
     t.string "provider"
     t.string "uid"
-=======
->>>>>>> b23e10e1fdffa07b1580b7afe2fc44c220888ad9
+
+    t.string "phone_number"
+    t.string "description"
+    t.string "image_file_name"
+    t.string "image_content_type"
+    t.integer "image_file_size"
+    t.datetime "image_updated_at"
+
     t.index ["email"], name: "index_users_on_email", unique: true
     t.index ["reset_password_token"], name: "index_users_on_reset_password_token", unique: true
   end

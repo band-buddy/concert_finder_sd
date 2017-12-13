@@ -2,6 +2,7 @@ class User < ApplicationRecord
   has_one :profile
   devise :database_authenticatable, :registerable,
          :recoverable, :rememberable, :trackable, :validatable
+
   devise :omniauthable, omniauth_providers: %i[facebook]
 
   def self.from_omniauth(auth)
@@ -10,5 +11,11 @@ class User < ApplicationRecord
         user.password = Devise.friendly_token[0,20]
     end
   end
+
+
+  has_attached_file :image, styles: { small: "64x64", med: "100x100", large: "200x200" }
+  validates_attachment :image, presence: true,
+    content_type: { content_type: ["image/jpg", "image/jpeg", "image/png", "image/gif"] },
+    size: { in: 0..10.megabytes }
 
 end

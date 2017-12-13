@@ -6,20 +6,12 @@ export default class Events extends Component {
     super(props)
     this.state = {
       // events: this.props.events ? this.props.events.events.event : []
-      // events: this.props.default ? this.props.default.events.event : this.props.events.events.event
       events: this.props.events
-      // events: this.props.events.events.event
-      // default: this.props.default
     }
   }
 
-  // updateSearch(term) {
-  //   var newEvent = Event.for term
-  //   this.setState({events: this.props.events})
-  // }
+   render(){
 
-
-  render(){
      return(
       <div>
         <table>
