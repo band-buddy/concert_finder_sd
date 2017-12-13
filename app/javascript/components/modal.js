@@ -1,14 +1,66 @@
 import React, { Component } from 'react';
+import ReactDOM from 'react-dom';
+import Modal from 'react-modal';
+import Events from './event.js'
 
-export default class Modal extends Component {
+const customStyles = {
+  content : {
+    top    : '50%',
+    left   : '50%',
+    right  : 'auto',
+    bottom : 'auto',
+    marginRight : '-50%',
+    transform : 'translate(-50%, -50%)'
+  }
+};
+
+export default class Pop extends Component {
   constructor(props) {
-    super(props)
-    this.state = { isModalOpen: false }
+    super(props);
+    this.state = {
+      ModalIsOpen: false
+    };
+
+    this.openModal = this.openModal.bind(this);
+    this.afterOpenModal = this.afterOpenModal.bind(this);
+    this.closeModal = this.closeModal.bind(this);
+  }
+
+  openModal() {
+    this.setState({modalIsOpen: true});
+  }
+
+  afterOpenModal() {
+    this.subtitle.style.color = '#f00';
+  }
+
+  closeModal(){
+    this.setState({modalIsOpen: false});
   }
 
   render() {
     return (
-      <p>Test</p>
-    )
+      <div>
+        <button onClick={this.openModal}>Open Modal</button>
+          <Modal
+            isOpen={this.state.modalIsOpen}
+            onAfterOpen={this.afterOpenModal}
+            onRequestClose={this.closeModal}
+            style={customStyles}
+            contentLabel="Example Modal"
+            ariaHideApp={false}
+          >
+          <button onClick={this.closeModal}>close</button>
+          <h2 ref={subtitle => this.subtitle = subtitle}>{this.props.title}</h2>
+          <p>{this.props.venue}</p>
+          <p>{this.props.time}</p>
+          <p>{this.props.address}</p>
+          <p>{this.props.city}</p>
+          <p>{this.props.country_abbr}</p>
+          <p>{this.props.postal}</p>
+          <p>{this.props.description}</p>
+          <button>Add to Profile</button>
+        </Modal>
+      </div>
+    )}
   }
-}

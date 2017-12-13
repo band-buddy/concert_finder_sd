@@ -17,6 +17,9 @@ td {
   padding: 0px;
 }
 
+/* events modal */
+
+
 .modal {
     display: none; /* Hidden by default */
     position: fixed; /* Stay in place */
