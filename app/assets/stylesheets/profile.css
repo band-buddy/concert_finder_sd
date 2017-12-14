@@ -1,19 +1,89 @@
 .profile {
-  background-color: #13D9E8;
-}
-
-main {
 
 }
 
-.edit {
-  display: flex;
-  flex-flow: column nowrap;
-  padding: 5px;
-  margin: 4px;
+.profile_main {
+  background: url('/assets/concert5') no-repeat;
+  background-size: cover;
+  padding: 80px 35px;
+  min-height: 80vh;
+  /* max-width: 1000px; */
+}
+
+.profile_section {
+  max-width: 1000px;
+}
+
+.profile_h1 {
+  font-size: 36px;
+  margin-bottom: 15px;
   color: white;
-  background-color: #2D2D2D;
+  text-shadow: 3px 3px black;
+}
+
+.profile_h2 {
+  color: white;
+  text-shadow: 3px 3px black;
+}
+
+.top {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+.profile_image {
+  margin-bottom: 10px;
+  margin-left: 51px;
+}
+
+.profile_info {
+  display: flex;
+  flex-direction: column;
+  margin: 0px 50px;
+  font-size: 20px;
+  color: white;
+  text-shadow: 2px 2px black;
+  background-color: rgba(0, 0, 0, 0.5);
+  /* text-align: center; */
+  padding: 5px;
+
+
+.edit_button {
+  padding: 5px;
+  margin-top: 15px;
+  color: white;
+  text-shadow: 2px 2px black;
+  background-color: grey;
   border: none;
   font-size: 16px;
   border-radius: 5px;
+  text-align: center;
+  text-decoration: none;
+  max-width: 150px;
+}
+
+
+.events_section {
+  margin-top: 80px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  color: white;
+  text-shadow: 2px 2px black;
+}
+
+.find_shows_button{
+  padding: 5px;
+  margin-top: 15px;
+  color: white;
+  background-color: grey;
+  border: none;
+  font-size: 16px;
+  border-radius: 5px;
+  text-align: center;
+  text-decoration: none;
+  min-width: 250px;
 }

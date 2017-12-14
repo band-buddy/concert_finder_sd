@@ -41,7 +41,7 @@ class ProfileController < ApplicationController
 
   def update
     @user = current_user
-    render 'update.html.erb'
+
   end
 
   def profile

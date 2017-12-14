@@ -65,6 +65,10 @@ ActiveRecord::Schema.define(version: 20171213194703) do
     t.string "image_content_type"
     t.integer "image_file_size"
     t.datetime "image_updated_at"
+
+    t.string "provider"
+    t.string "uid"
+
     t.index ["email"], name: "index_users_on_email", unique: true
     t.index ["reset_password_token"], name: "index_users_on_reset_password_token", unique: true
   end
