@@ -1,44 +1,28 @@
 import React, {Component} from 'react';
 import Pop from './modal.js';
+import Header from 'components/header.js';
 
 export default class Events extends Component {
-  constructor(props){
-    super(props)
-    this.state = {
-      // events: this.props.events ? this.props.events.events.event : []
-      events: this.props.events
-    }
-  }
-
    render(){
-
      return(
-      <div>
-        <table>
-          <thead className="thStyles">
-            <tr>
-              <th>Artist</th>
-              <th>Venue</th>
-              <th>Start Time</th>
-              <th>Address</th>
-              <th>Button</th>
-            </tr>
-          </thead>
-          <tbody className="tbStyles">
-            {this.state.events.map((event)=>{
-              return (
-                <tr key={event.id}>
-                  <td>{event.title}</td>
-                  <td>{event.venue_name}</td>
-                  <td>{event.start_time}</td>
-                  <td>{event.venue_address} - {event.city_name} - {event.country_abbr} - {event.postal_code}</td>
-                  <td><Pop title={event.title} venue={event.venue_name} time={event.start_time} address={event.venue_address} city={event.city_name} country={event.country_abbr} postal={event.postal_code} description={event.description} /></td>
-                </tr>
-              )}
-            )}
-          </tbody>
-        </table>
+      <li>
+        <div className="title">{this.props.event.title}</div>
+        <div>{this.props.event.venue_name}</div>
+        <div>{this.props.event.start_time}</div>
+        <div>{this.props.event.venue_address} - {this.props.event.city_name} - {this.props.event.country_abbr} - {this.props.event.postal_code}</div>
+        <div>
+          <Pop
+            title={this.props.event.title}
+            venue={this.props.event.venue_name}
+            time={this.props.event.start_time}
+            address={this.props.event.venue_address}
+            city={this.props.event.city_name}
+            country={this.props.event.country_abbr}
+            postal={this.props.event.postal_code}
+            description={this.props.event.description}
+          />
         </div>
+      </li>
      )
    }
 }

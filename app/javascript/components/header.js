@@ -15,7 +15,7 @@ export default class Header extends Component {
           link: "/about"
         },
         {
-          name: "Calendar",
+          name: "Events",
           link: "/events"
         },
         {

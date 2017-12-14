@@ -4,6 +4,8 @@ Rails.application.routes.draw do
 
   get '/users/index' => 'users#index'
 
+  get '/map-test' => 'maps#index'
+
   get '/profile' => 'profile#index'
 
   post '/profile' => 'profile#index'

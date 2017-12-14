@@ -16,6 +16,7 @@ Rails.application.config.assets.precompile += %w(appinfo.css)
 Rails.application.config.assets.precompile += %w(profile.css)
 Rails.application.config.assets.precompile += %w(update.css)
 Rails.application.config.assets.precompile += %w(events_list.css)
+Rails.application.config.assets.precompile += %w(login.css)
 
 
 # Precompile additional assets.

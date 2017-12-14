@@ -1,7 +1,8 @@
 import React, { Component } from 'react';
 import ReactDOM from 'react-dom';
 import Modal from 'react-modal';
-import Events from './event.js'
+import Events from './event.js';
+import GoogleMap from 'google-map-react';
 
 const customStyles = {
   content : {
@@ -41,7 +42,7 @@ export default class Pop extends Component {
   render() {
     return (
       <div>
-        <button onClick={this.openModal}>Open Modal</button>
+        <button onClick={this.openModal}>More Info</button>
           <Modal
             isOpen={this.state.modalIsOpen}
             onAfterOpen={this.afterOpenModal}
@@ -59,6 +60,14 @@ export default class Pop extends Component {
           <p>{this.props.country_abbr}</p>
           <p>{this.props.postal}</p>
           <p>{this.props.description}</p>
+          <div style={{width: '600px', height: '400px'}}>
+            <GoogleMap
+              bootstrapURLKeys={{key: this.props.googleApiKey}}
+              center={[32.7096298,-117.1602029]}
+              zoom={18}
+            >
+            </GoogleMap>
+          </div>
           <button>Add to Profile</button>
         </Modal>
       </div>

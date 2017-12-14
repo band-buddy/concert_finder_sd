@@ -7,10 +7,6 @@
   image-rendering: crisp-edges;
 }
 
-form {
-  margin: 100px 50px;
-}
-
 html {
   font-family: 'Rubik', sans-serif;
   color: #2D2D2D;
@@ -30,26 +26,14 @@ html {
     background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
 }
 
-/* Modal Content */
-.modal-content {
-    background-color: #fefefe;
-    margin: auto;
-    padding: 20px;
-    border: 1px solid #888;
-    width: 80%;
-}
-
-/* The Close Button */
-.close {
-    color: #aaaaaa;
-    float: right;
-    font-size: 28px;
-    font-weight: bold;
-}
-
-.close:hover,
-.close:focus {
-    color: #000;
+button {
+  background-color: #ecf0f1;
+    border: none;
+    border-radius: 5px;
+    color: #282828;
+    padding: 5px 10px;
+    text-align: center;
     text-decoration: none;
-    cursor: pointer;
+    display: inline-block;
+    font-size: 16px;
 }
