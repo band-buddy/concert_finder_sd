@@ -1,18 +1,54 @@
-table {
-  width: 90vw;
+.event-body {
+  color: white;
+  background-color: #000000;
+}
+
+.event-title-search {
   display: flex;
-  align-items: center;
   flex-direction: column;
+  background: linear-gradient(180deg, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0), rgba(0, 0, 0, 1)), url('/assets/events-info-header.png') no-repeat;
+  background-repeat: no-repeat;
+  background-position: center top;
+  background-size: cover;
+  justify-content: center;
+  align-items: center;
+  min-height: 50vh;
+  margin-bottom: 20px;
 }
 
-.thStyles {
-  border: 2px solid black;
+.event-title-search input {
+    border-radius: 5px;
+    border: none;
+    padding: 5px;
+    width: 400px;
 }
 
-td {
-  border: 1px solid black;
-  margin: 0px;
-  padding: 2px;
+.event-background {
+  background-color: rgba(0, 0, 0, 0.3);
+}
+
+.event-title-search button {
+  padding: 5px;
+  border-radius: 5px;
+}
+
+.events-list {
+  display: flex;
+  flex-flow: column nowrap;
+  align-items: center;
+}
+
+.events-list li {
+  margin: 5px;
+  padding: 30px 10px;
+  border: 1px solid #ffffff;
+  width: 40%;
+  text-align: center;
+  list-style-type: none;
+}
+
+.events-list li div {
+  margin: 5px;
 }
 
 /* events modal */

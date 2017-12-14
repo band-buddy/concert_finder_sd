@@ -42,7 +42,7 @@ export default class Pop extends Component {
   render() {
     return (
       <div>
-        <button onClick={this.openModal}>Open Modal</button>
+        <button onClick={this.openModal}>More Info</button>
           <Modal
             isOpen={this.state.modalIsOpen}
             onAfterOpen={this.afterOpenModal}

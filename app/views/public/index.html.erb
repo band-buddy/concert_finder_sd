@@ -1,6 +1,5 @@
 <!DOCTYPE html>
 <html>
-  <head>
     <header>
       <% if user_signed_in? %>
           <%= react_component("Header") %>
@@ -11,7 +10,6 @@
         <%= react_component("SignedIn") %>
       <% end %>
     </header>
-  </head>
   <body>
     <%= react_component("Home") %>
   </body>

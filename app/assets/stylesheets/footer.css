@@ -5,7 +5,8 @@ footer {
   text-align: center;
   background-color: #2D2D2D;
   color: white;
-  padding: 20px
+  padding: 20px;
+  margin-top: 50px;
 }
 
 footer a {
