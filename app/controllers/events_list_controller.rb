@@ -4,13 +4,10 @@ require 'pp'
 class EventsListController < ApplicationController
 
   def events
-    @events = Event.new
-
-    if params.has_key?(:keyword_search)
-      @events = Event.for params[:keyword_search]
-    end
-
-    pp Event.for params[:keyword_search]
+    # @events = Event.new
+    @events = Event.for(params[:keyword_search]).parsed_response["events"]["event"]
+    # @test = params[:keyword_search]
+    # redirect_to('/about', :notice => 'Record not found') unless @test
   end
 
   def index

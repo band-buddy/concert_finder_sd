@@ -22,6 +22,8 @@ gem 'webpacker'
 gem 'paperclip'
 
 gem 'devise'
+
+gem 'omniauth-facebook'
 # See https://github.com/rails/execjs#readme for more supported runtimes
 # gem 'therubyracer', platforms: :ruby
 gem 'textacular'

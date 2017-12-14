@@ -1,6 +1,20 @@
 <h1>Events</h1>
 <form action="/events" method="get">
-  <input type="text" name="keyword_search" placeholder="Search"/>
-  <button type="submit">Submit</button>
+  <input id="term" type="text" name="keyword_search" placeholder="Search"/>
+  <button onclick="updateSearch()" type="submit">Submit</button>
 </form>
-<%= react_component('EventsList', events: @events) %>
+
+<%= react_component('Events', events: @events) %>
+
+<%= react_component("Map", {
+  googleApiKey: @google_api_key,
+  center: @map_center,
+  zoom: @map_zoom,
+  pins: [
+  {title: 'LEARN',
+   lat: 32.7096298,
+   lng: -117.1602029
+  }
+]
+
+}) %>

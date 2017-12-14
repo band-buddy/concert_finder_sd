@@ -3,6 +3,7 @@
   flex-direction: column;
   justify-content: center;
   height: 75vh;
+  color: white;
 }
 
 .login_container {

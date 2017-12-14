@@ -8,8 +8,7 @@ import About from 'components/about.js'
 import SignedIn from 'components/signedin.js'
 import Map from 'components/map.js'
 import Pin from 'components/pin.js'
+import Pop from 'components/modal.js'
 import WebpackerReact from 'webpacker-react';
 
-
-
-WebpackerReact.setup({Header, Home, AppInfo, Footer, Events, EventsList, About, SignedIn, Map, Pin})
+WebpackerReact.setup({Header, Home, AppInfo, Footer, Events, EventsList, About, SignedIn, Map, Pin, Pop})
