@@ -55,8 +55,10 @@ ActiveRecord::Schema.define(version: 20171213194703) do
     t.string "first_name"
     t.string "last_name"
     t.date "date_of_birth"
+
     t.string "phone_number"
     t.string "description"
+    
     t.string "provider"
     t.string "uid"
     t.string "image_file_name"
