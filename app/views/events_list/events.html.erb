@@ -1,8 +1,27 @@
-<h1>Events</h1>
-<form action="/events" method="get">
-  <input id="term" type="text" name="keyword_search" placeholder="Search"/>
-  <button onclick="updateSearch()" type="submit">Submit</button>
-</form>
-
-<%= react_component('Events', events: @events) %>
-
+<!DOCTYPE html>
+<html>
+  <body class="event-body">
+    <header>
+      <% if user_signed_in? %>
+      <%= react_component("Header") %>
+      <button class="nav-button">
+        <%= link_to('Logout', destroy_user_session_path, method: :delete) %>
+      </button>
+      <% else %>
+      <%= react_component("SignedIn") %>
+      <% end %>
+    </header>
+    <main class="event-background">
+      <section class="event-title-search">
+        <h1>Events</h1>
+        <form action="/events" method="get">
+          <input id="term" type="text" name="keyword_search" placeholder="Search"/>
+          <button onclick="updateSearch()" type="submit">Submit</button>
+        </form>
+      </section>
+      <section class="event-listing">
+      <%= react_component('EventsList', events: @events) %>
+      </section>
+    </main>
+  </body>
+</html>

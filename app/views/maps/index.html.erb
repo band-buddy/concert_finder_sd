@@ -1,0 +1,14 @@
+<h1>Map Example</h1>
+
+<%= react_component("Map", {
+  googleApiKey: @google_api_key,
+  center: @map_center,
+  zoom: @map_zoom,
+  pins: [
+  {title: 'LEARN',
+   lat: 32.7096298,
+   lng: -117.1602029
+  }
+]
+
+}) %>

@@ -14,7 +14,7 @@ export default class SignedIn extends Component {
           link: "/about"
         },
         {
-          name: "Calendar",
+          name: "Events",
           link: "/events"
         },
         {
