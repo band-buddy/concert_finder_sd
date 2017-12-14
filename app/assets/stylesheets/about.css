@@ -1,57 +1,44 @@
-.homeCard {
+.event_section {
+  background: url('/assets/about.jpg') no-repeat;
+  background-size: cover;
+  background-position: center top;
   display: flex;
-  flex-flow: row wrap;
+  flex-direction: row;
+  flex-wrap: wrap;
   justify-content: space-around;
-  align-content: center;
+  padding-top: 100px;
 }
 
-.flex-card-list {
-    display:flex;
-    flex-direction: row;
-    flex-wrap:wrap;
+.flex-card-heading > h3 {
+  margin: 10px 0px 10px 15px;
 }
-.flex-card-listitem {
-    display:flex;
-    list-style-type: none;
-}
-.flex-card {
-    display:flex;
-    flex-direction:column;
-    background-color: #ECF0F1 ;
-    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
-    transition: 0.3s;
-    border-radius: 5px;
-    margin: 20px 0px;
 
+.event-card {
+	display: flex;
+	flex-direction: column;
+  background-color: rgba(255, 255, 255, .9);
+  border: 1px solid #FFF;
+  margin: 40px 10px;
+  box-shadow: 0 0px 0px 0 rgba(0,0,0,0.2);
+  border-radius: 5px;
+  min-width: 300px;
+  padding: 20px;
 }
 
 .flex-card:hover{
     box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
 }
 
-.flex-card-content {
-    display:flex;
-    flex:1 0 auto; /* We have to add a basis for IE10/11 */
-    flex-direction:column;
-    padding: 2px 16px;
-}
-.flex-card-content p {
-    flex:1 0 auto; /* We have to add a basis for IE10/11 */
-}
-
-.flex-card-button {
-    background-color: #C2A5C9 ;
-    border: none;
-    color: #ECF0F1 ;
-    padding: 15px 32px;
-    text-align: center;
-    text-decoration: none;
-    display: inline-block;
-    font-size: 16px;
-    cursor: pointer;
-    border-radius: 5px;
-}
 .flex-card-image > img {
     border-top-right-radius: 5px;
     border-top-left-radius: 5px;
+}
+
+.flex-card-content {
+  font-size: 95%;
+	display:flex;
+	flex:1 0 auto;
+	flex-direction:column;
+  margin: 10px 0px 10px 0px;
+  max-width: 400px;
 }
