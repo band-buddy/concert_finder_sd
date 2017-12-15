@@ -7,24 +7,24 @@ export default class AppInfo extends Component {
     this.state = {
       info: [
         {
-          icon: "http://via.placeholder.com/400x250",
+          icon: "/assets/find_concert.jpg",
           title: "Search for a concert",
           description: "Search for a concert, band, or local venue in San Diego using our search function.  Our concerts are updated regularly so check back often!",
-          link: "#",
+          link: "/events",
           linkName: "Search Concert"
         },
         {
-          icon: "http://via.placeholder.com/400x250",
+          icon: "/assets/create_profile.jpg",
           title: "Create a profile.",
-          description: "Sign up and let others know about the concerts your going to.",
-          link: "#",
+          description: "Sign up and save events to your page.",
+          link: "/user/sign_up",
           linkName: "Update Your Profile"
         },
         {
-          icon: "http://via.placeholder.com/400x250",
+          icon: "/assets/find_friend",
           title: "Find a friend",
           description: "Looking for concert buddies? Check to see who else is going to the show and link up with them before the concert.",
-          link: "#",
+          link: "/user/sign_up",
           linkName: "Signup Today"
         }
       ]
