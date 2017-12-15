@@ -68,3 +68,59 @@ header button a:hover {
 .nav-button a:hover {
   color: #2D2D2D;
 }
+
+label {
+  margin: 0 40px 0 0;
+  font-size: 30px;
+  line-height: 70px;
+  display: none;
+  width: 26px;
+  float: right;
+  color: white;
+}
+
+#toggle {
+  display: none;
+}
+
+@media only screen and (max-width: 760px) {
+  label {
+    padding: 3px 7px;
+    display: block;
+    cursor: pointer;
+  }
+
+  nav {
+    background-color: #2D2D2D;
+  }
+
+  .menu {
+    text-align: center;
+    display: none;
+  }
+
+  .menu ul {
+    clear: right;
+    margin: 50px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .menu li a {
+    text-align: center;
+    color: #fff;
+  }
+
+  #signup {
+    border: none;
+    padding: 5px 15px;
+    margin-top: -8px;
+    border-radius: 5px;
+  }
+
+  #toggle:checked + .menu {
+    display: block;
+  }
+
+}
