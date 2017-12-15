@@ -18,6 +18,8 @@ Rails.application.config.assets.precompile += %w(update.css)
 Rails.application.config.assets.precompile += %w(events_list.css)
 Rails.application.config.assets.precompile += %w(login.css)
 Rails.application.config.assets.precompile += %w(signup.css)
+Rails.application.config.assets.precompile += %w(forgot-password.css)
+
 
 
 # Precompile additional assets.
