@@ -25,11 +25,6 @@
   margin-bottom: 50px;
 }
 
-.event-title-search button {
-  padding: 5px;
-  border-radius: 5px;
-}
-
 .events-list {
   display: flex;
   flex-flow: column nowrap;
