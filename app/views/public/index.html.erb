@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html>
+  <div id="full_page">
     <header>
       <% if user_signed_in? %>
           <%= react_component("Header") %>
@@ -10,7 +11,8 @@
         <%= react_component("SignedIn") %>
       <% end %>
     </header>
-  <body>
-    <%= react_component("Home") %>
-  </body>
+    <body>
+      <%= react_component("Home", events: @events) %>
+    </body>
+  </div>
 </html>
