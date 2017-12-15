@@ -6,7 +6,7 @@
     <div class="update_profile">
     <h1>Update your profile!</h1>
       <h3>Hi, <%= current_user.first_name %>!</h3>
-      <%= form_with model: @user, url: profile_path, html: { multipart: true }, class: "update_form" do |f| %>
+      <%= form_with model: @user, url: profile_update_path, html: { multipart: true }, class: "update_form" do |f| %>
         <%= f.text_field :username, name: :username, placeholder: "Username" %>
         <%= f.text_field :first_name, name: :first_name, placeholder: "First Name" %>
         <%= f.text_field :last_name, name: :last_name, placeholder: "Last Name" %>
