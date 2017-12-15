@@ -22,14 +22,20 @@
 
   <body>
     <header>
-      <% if user_signed_in? %>
-        <%= react_component("Header") %>
-        <div class="nav-button">
-          <%= link_to('Logout', destroy_user_session_path, method: :delete) %>
+      <div class="nav">
+        <label for="toggle">&#9776;</label>
+        <input type="checkbox" id="toggle"/>
+        <div class="menu">
+          <% if user_signed_in? %>
+            <%= react_component("Header") %>
+            <div class="nav-button">
+              <%= link_to('Logout', destroy_user_session_path, method: :delete) %>
+            </div>
+          <% else %>
+            <%= react_component("SignedIn") %>
+          <% end %>
         </div>
-        <% else %>
-        <%= react_component("SignedIn") %>
-        <% end %>
+      </div>
     </header>
     <%= yield %>
     <%= react_component("Footer") %>
