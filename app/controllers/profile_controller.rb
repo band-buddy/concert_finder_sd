@@ -1,20 +1,19 @@
 class ProfileController < ApplicationController
+  before_action :set_user, only: [:index, :update, :update_logic]
   before_action :authenticate_user!
-  before_action :user_params
+  before_action :user_params, only: [:update_logic]
+
   def index
-    params.permit(:username, :first_name, :last_name, :date_of_birth, :phone_number, :email, :description, :utf8, :_method, :authenticity_token, :commit)
-    @user = current_user
     render 'profile.html.erb'
   end
 
   def update
-    @user = current_user
 
-    if user_params
-      @user.update(user_params)
-      @user.save
-      redirect_to profile_path
-    end
+    # if user_params
+    #   @user.update(user_params)
+    #   @user.save
+    #   redirect_to profile_path
+    # end
     #   @user.update(username: params[:username])
     #   @user.save
     #   redirect_to profile_path
@@ -59,18 +58,27 @@ class ProfileController < ApplicationController
     # end
   end
 
-  def redirect
+  def update_logic
+    respond_to do |format|
+      if @user.update(user_params)
+        format.html { redirect_to profile_path, notice: 'Profile was successfully updated.' }
+      else
+        format.html { render :edit }
+      end
+    end
     @user.save
-    redirect_to '/profile'
   end
 
   def profile
-
   end
 end
 
 private
 
+def set_user
+  @user = current_user
+end
+
 def user_params
-  params.permit(:username, :first_name, :last_name, :date_of_birth, :phone_number, :email, :description, :utf8, :_method, :authenticity_token, :commit)
+  params.permit(:username, :first_name, :last_name, :date_of_birth, :phone_number, :email, :description, :image)
 end

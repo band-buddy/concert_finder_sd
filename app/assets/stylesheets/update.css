@@ -1,10 +1,14 @@
 .update_profile {
   background: url('/assets/update.jpg') no-repeat;
   background-size: cover;
+  min-height: 100vh;
+  padding-top: 50px;
 }
+
 .update_title {
   text-align: center;
   color: white;
+  padding-bottom: 25px;
 }
 
 .update_form {
