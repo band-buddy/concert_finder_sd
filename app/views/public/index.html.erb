@@ -1,15 +1,5 @@
 <!DOCTYPE html>
 <html>
-    <header>
-      <% if user_signed_in? %>
-          <%= react_component("Header") %>
-          <button class="nav-button">
-            <%= link_to('Logout', destroy_user_session_path, method: :delete) %>
-          </button>
-      <% else %>
-        <%= react_component("SignedIn") %>
-      <% end %>
-    </header>
   <body>
     <%= react_component("Home") %>
   </body>
