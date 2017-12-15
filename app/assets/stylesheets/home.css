@@ -1,7 +1,7 @@
 .section {
   color: white;
   font-size: 50px;
-  background: linear-gradient(25deg, rgba(126, 161, 214, .6), rgba(208, 69, 240, .6)), url('/assets/background1.png') no-repeat;
+  background: linear-gradient(25deg, rgba(126, 161, 214, .6), rgba(208, 69, 240, .6)), url('/assets/home-background.png') no-repeat;
   background-size: cover;
   min-height: 100vh;
   background-position: center;
@@ -18,10 +18,6 @@
   border: none;
   border-radius: 5px;
   padding: 5px;
-}
-
-input:focus {
-  outline: none;
 }
 
 .cardsSection {

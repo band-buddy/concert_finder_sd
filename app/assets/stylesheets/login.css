@@ -27,28 +27,12 @@
 
 .login-username input {
   margin: auto;
-  font-size: 16px;
-  padding: 5px;
   width: 200px;
   display: block;
-  border-radius: 5px;
-  border: none;
-  border-bottom: 1px solid #757575;
-  text-decoration: none;
 }
 
 .login-password input {
   margin: auto;
-  font-size: 16px;
-  padding: 5px;
   width: 200px;
   display: block;
-  border-radius: 5px;
-  border: none;
-  border-bottom: 1px solid #757575;
-  text-decoration: none;
-}
-
-input:-webkit-autofill {
-    -webkit-box-shadow: 0 0 0 30px white inset;
 }

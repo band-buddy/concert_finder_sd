@@ -17,7 +17,7 @@ export default class EventsList extends Component {
       )}
     )
     return(
-      <ul class="events-list">
+      <ul className="events-list">
         {events}
       </ul>
     )

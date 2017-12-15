@@ -3,7 +3,7 @@
 }
 
 .profile_main {
-  background: url('/assets/concert5') no-repeat;
+  background: url('/assets/profile-background-image.jpeg') no-repeat;
   background-size: cover;
   padding: 80px 35px;
   min-height: 80vh;

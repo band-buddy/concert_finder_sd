@@ -1,16 +1,6 @@
 <!DOCTYPE html>
 <html>
   <body class="profile">
-      <header>
-        <% if user_signed_in? %>
-            <%= react_component("Header") %>
-            <button class="nav-button">
-              <%= link_to('Logout', destroy_user_session_path, method: :delete) %>
-            </button>
-        <% else %>
-          <%= react_component("SignedIn") %>
-        <% end %>
-      </header>
     <main class="profile_main">
       <section class="profile_section">
         <h1 class="profile_h1"><%= current_user.username %>'s Profile</h1>
@@ -26,13 +16,13 @@
             <p>DOB: <%= current_user.date_of_birth %></p><br>
             <p>Phone Number: <%= current_user.phone_number %></p><br>
             <p>Description: <%= current_user.description %></p>
-            <a href="/profile/update" class="edit_button">Edit Profile</a>
+            <button a href="/profile/update">Edit Profile</button>
           </div>
         </div>
       </section>
       <section class="events_section">
         <h2 class="profile_h2">Saved Events:</h2>
-        <a class="find_shows_button" href="/events">Find Shows</a>
+        <button a href="/events">Find Shows</button>
         <table class="saved_events">
           <thead>
             <tr>

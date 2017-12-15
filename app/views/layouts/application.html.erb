@@ -16,11 +16,21 @@
     <%= stylesheet_link_tag 'events_list', media: 'all', 'data-turbolinks-track': 'reload' %>
     <%= stylesheet_link_tag 'login', media: 'all', 'data-turbolinks-track': 'reload' %>
     <%= stylesheet_link_tag 'application', 'https://fonts.googleapis.com/css?family=Rubik:700', media: 'all', 'data-turbolinks-track': 'reload'%>
-    <%= stylesheet_link_tag 'application', 'https://cdnjs.cloudflare.com/ajax/libs/normalize/7.0.0/normalize.min.css', media: 'all', 'data-turbolinks-track': 'reload'%>
+    <!-- <%= stylesheet_link_tag 'application', 'https://cdnjs.cloudflare.com/ajax/libs/normalize/7.0.0/normalize.min.css', media: 'all', 'data-turbolinks-track': 'reload'%> -->
     <%= javascript_pack_tag 'application' %>
   </head>
 
   <body>
+    <header>
+      <% if user_signed_in? %>
+        <%= react_component("Header") %>
+        <div class="nav-button">
+          <%= link_to('Logout', destroy_user_session_path, method: :delete) %>
+        </div>
+        <% else %>
+        <%= react_component("SignedIn") %>
+        <% end %>
+    </header>
     <%= yield %>
     <%= react_component("Footer") %>
   </body>
