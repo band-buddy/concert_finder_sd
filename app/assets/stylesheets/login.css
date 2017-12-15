@@ -29,10 +29,29 @@
   margin: auto;
   width: 200px;
   display: block;
+  margin-top: 5px;
 }
 
 .login-password input {
   margin: auto;
   width: 200px;
   display: block;
+  margin-top: 5px;
+}
+
+.login-submit {
+  margin-top: 5px;
+}
+
+.login-submit input:hover {
+  color: #ecf0f1;
+  background-color: #2D2D2D;
+}
+
+.login-remember-me {
+  margin-top: 5px;
+}
+
+.login-password {
+  margin-top: 5px;
 }
