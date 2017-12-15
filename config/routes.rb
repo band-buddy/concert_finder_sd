@@ -14,6 +14,8 @@ Rails.application.routes.draw do
 
   get '/profile/update' => 'profile#update'
 
+  patch '/profile/update_logic' => 'profile#update_logic'
+
   root to: 'public#index'
 
   get '/events' => 'events_list#events'
