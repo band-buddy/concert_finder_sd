@@ -70,4 +70,27 @@
   font-size: 50%;
   color: white;
   background-color: rgba(235, 120, 240, .9);
+
+}
+
+@media only screen and (max-width: 1000px) {
+  .appName {
+    font-size: 3rem;
+  }
+
+  .fadeText {
+    font-size: 2.4rem;
+  }
+}
+
+@media only screen and (max-width: 760px) {
+  .appName {
+    font-size: 2rem;
+  }
+
+  .fadeText {
+    font-size: 1.6rem;
+  }
+}
+
 } */
