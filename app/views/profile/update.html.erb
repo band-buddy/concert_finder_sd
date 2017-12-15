@@ -4,7 +4,7 @@
   </head>
   <body>
     <div class="update_profile">
-    <h1>Update your profile!</h1>
+    <h1 class="update_title">Update your profile!</h1>
       <h3>Hi, <%= current_user.first_name %>!</h3>
       <%= form_with model: @user, url: profile_path, html: { multipart: true }, class: "update_form" do |f| %>
         <%= f.text_field :username, name: :username, placeholder: "Username" %>
@@ -13,7 +13,7 @@
         <%= f.text_field :email, name: :email, placeholder: "Email" %>
         <%= f.text_field :phone_number, name: :phone_number, placeholder: "Phone Number" %>
         <%= f.text_field :description, name: :description, placeholder: "Description" %>
-        <%= f.file_field :image, name: :image, method: :patch %>
+        <%= f.file_field :image, name: :image, method: :patch, class: "image_file" %>
         <%= f.submit %>
       <% end %>
     </div>
