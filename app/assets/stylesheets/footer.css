@@ -7,13 +7,10 @@ footer {
   color: white;
   padding: 20px;
   width: 100%;
-  margin-top: 50px; 
-   max-height: 100vh; 
-
+  max-height: 100vh;
 }
 
 footer a {
-  text-decoration: none;
   color: white;
 }
 

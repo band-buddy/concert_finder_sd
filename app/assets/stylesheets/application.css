@@ -30,6 +30,17 @@ button:hover {
   color: #ecf0f1;
 }
 
+.actions input {
+  color: #2D2D2D;
+  background-color: #ecf0f1;
+  padding: 5px 10px;
+}
+
+.actions input:hover {
+  background-color: #2D2D2D;
+  color: #ecf0f1;
+}
+
 input {
   font-size: 16px;
   outline: none;
@@ -64,4 +75,13 @@ h2 {
 
 h3 {
   font-size: 20px;
+}
+
+a {
+  color: white;
+  text-decoration: none;
+}
+
+a:hover {
+  color: #C2A5C9;
 }
