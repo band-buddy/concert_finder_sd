@@ -51,3 +51,11 @@
   animation-duration: 5s;
   animation-fill-mode: forwards;
 }
+
+.homeButton {
+  padding: 15px 10px;
+  margin-top: 15px;
+  font-size: 50%;
+  color: white;
+  background-color: rgba(235, 120, 240, .9);
+}

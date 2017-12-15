@@ -1,45 +1,47 @@
 <!DOCTYPE html>
 <html>
-  <body class="profile">
-    <main class="profile_main">
-      <section class="profile_section">
-        <h1 class="profile_h1"><%= current_user.username %>'s Profile</h1>
-        <div class="top">
-          <div class="profile_image">
-            <%= link_to image_tag(@user.image.url(:large)), @user.image.url %> <br />
+  <div id="full_page">
+    <body class="profile">
+      <main class="profile_main">
+        <section class="profile_section">
+          <h1 class="profile_h1"><%= current_user.username %>'s Profile</h1>
+          <div class="top">
+            <div class="profile_image">
+              <%= link_to image_tag(@user.image.url(:large)), @user.image.url %> <br />
+            </div>
+            <div class="profile_info">
+              <p>Username: <%= current_user.username %></p><br>
+              <p>First Name: <%= current_user.first_name %></p><br>
+              <p>Last Name: <%= current_user.last_name %></p><br>
+              <p>Email: <%= current_user.email %></p><br>
+              <p>DOB: <%= current_user.date_of_birth %></p><br>
+              <p>Phone Number: <%= current_user.phone_number %></p><br>
+              <p>Description: <%= current_user.description %></p>
+              <a href="/profile/update" class="edit_button">Edit Profile</a>
+            </div>
           </div>
-          <div class="profile_info">
-            <p>Username: <%= current_user.username %></p><br>
-            <p>First Name: <%= current_user.first_name %></p><br>
-            <p>Last Name: <%= current_user.last_name %></p><br>
-            <p>Email: <%= current_user.email %></p><br>
-            <p>DOB: <%= current_user.date_of_birth %></p><br>
-            <p>Phone Number: <%= current_user.phone_number %></p><br>
-            <p>Description: <%= current_user.description %></p>
-            <button a href="/profile/update">Edit Profile</button>
-          </div>
-        </div>
-      </section>
-      <section class="events_section">
-        <h2 class="profile_h2">Saved Events:</h2>
-        <button a href="/events">Find Shows</button>
-        <table class="saved_events">
-          <thead>
-            <tr>
-              <td>Title</td>
-              <td>Date</td>
-              <td>Venue</td>
-            </tr>
-          </thead>
-          <tbody>
-            <tr>
-              <td>V-Ron and the Kidz</td>
-              <td>2017-12-15 20:00:00</td>
-              <td>Cafe21</td>
-            </tr>
-          </tbody>
-        </table>
-      </section>
-    </main>
-  </body>
+        </section>
+        <section class="events_section">
+          <h2 class="profile_h2">Saved Events:</h2>
+          <a class="find_shows_button" href="/events">Find Shows</a>
+          <table class="saved_events">
+            <thead>
+              <tr>
+                <td>Title</td>
+                <td>Date</td>
+                <td>Venue</td>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>V-Ron and the Kidz</td>
+                <td>2017-12-15 20:00:00</td>
+                <td>Cafe21</td>
+              </tr>
+            </tbody>
+          </table>
+        </section>
+      </main>
+    </body>
+  </div>
 </html>

@@ -7,11 +7,14 @@
   image-rendering: crisp-edges;
 }
 
+#full_page {
+  min-height: 100vh;
+}
+
 html {
   font-family: arial, helvetica, sans-serif;
   color: #2D2D2D;
 }
-
 
 button {
     background-color: #ecf0f1;
