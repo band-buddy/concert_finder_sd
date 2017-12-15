@@ -20,20 +20,22 @@
 }
 
 .flex-card-image > img {
+    height: 250px;
+    width: 400px;
     border-top-right-radius: 5px;
     border-top-left-radius: 5px;
 }
 
 .flex-card-content {
 	display:flex;
-	flex:1 0 auto;
+	flex: 1;
 	flex-direction:column;
   margin: 10px 0px 10px 0px;
   max-width: 400px;
 }
-.flex-card-content p {
+/*.flex-card-content p {
 	flex:1 0 auto;
-}
+}*/
 
 .flex-card-link {
   display: flex;
@@ -42,6 +44,15 @@
 }
 
 .flex-card-link a {
-  color: #C2A5C9;   /* #932f81*/
+  color: #6918b4;
+  font-weight: bold;
   text-decoration: none;
+}
+
+.flex-card-heading {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  padding: 5px 8px 15px 8px;
+  max-width: 400px;
 }

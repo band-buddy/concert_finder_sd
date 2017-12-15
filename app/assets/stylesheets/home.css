@@ -40,6 +40,18 @@
   }
 }
 
+.appName {
+  font-size: 4rem;
+  top: 10.5rem;
+  left: 10%;
+  opacity: 0;
+  color: #white;
+  animation-name: fadeIn;
+  animation-delay: 0s;
+  animation-duration: 5s;
+  animation-fill-mode: forwards;
+}
+
 .fadeText {
   font-size: 3.4rem;
   top: 10.5rem;
