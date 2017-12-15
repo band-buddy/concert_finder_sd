@@ -17,19 +17,12 @@
 }
 
 .event-title-search input {
-    border-radius: 5px;
-    border: none;
-    padding: 5px;
     width: 400px;
 }
 
 .event-background {
   background-color: rgba(0, 0, 0, 0.3);
-}
-
-.event-title-search button {
-  padding: 5px;
-  border-radius: 5px;
+  margin-bottom: 50px;
 }
 
 .events-list {

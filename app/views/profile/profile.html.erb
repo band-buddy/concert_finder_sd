@@ -2,16 +2,6 @@
 <html>
   <div id="full_page">
     <body class="profile">
-        <header>
-          <% if user_signed_in? %>
-              <%= react_component("Header") %>
-              <button class="nav-button">
-                <%= link_to('Logout', destroy_user_session_path, method: :delete) %>
-              </button>
-          <% else %>
-            <%= react_component("SignedIn") %>
-          <% end %>
-        </header>
       <main class="profile_main">
         <section class="profile_section">
           <h1 class="profile_h1"><%= current_user.username %>'s Profile</h1>

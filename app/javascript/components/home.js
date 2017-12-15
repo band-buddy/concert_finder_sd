@@ -16,8 +16,8 @@ export default class Home extends Component{
     return(
         <div>
           <div className="section">
-            <p className="fadeText">Find the best concerts in San Diego.<br />
-            Meet new friends.</p>
+            <h1 className="fadeText">Find the best concerts in San Diego.<br />
+            Meet new friends.</h1>
             <form action="events" method="get">
               <input className="homeSearch" name="keyword_search" type='text' placeholder="Search for events by band name or venue"/><br></br>
               <button className="homeButton" type="submit">Search Events!</button>

@@ -4,10 +4,6 @@
   justify-content: space-around;
 }
 
-.flex-card-heading > h3 {
-  margin: 10px 0px 10px 15px;
-}
-
 .flex-card {
 	display:flex;
 	flex-direction:column;
@@ -29,7 +25,6 @@
 }
 
 .flex-card-content {
-  font-size: 95%;
 	display:flex;
 	flex:1 0 auto;
 	flex-direction:column;
@@ -43,7 +38,6 @@
 .flex-card-link {
   display: flex;
   flex-direction: column;
-  justify-content: flex-end;
   margin: 20px 0px 0px 0px;
 }
 

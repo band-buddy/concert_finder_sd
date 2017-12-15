@@ -1,22 +1,38 @@
 .update_profile {
-  background-color: #96BDBF;
+  background: url('/assets/update.jpg') no-repeat;
+  background-size: cover;
+}
+.update_title {
+  text-align: center;
+  color: white;
 }
 
 .update_form {
-  display: flex;
-  flex-flow: column nowrap;
+  position: relative;
+  margin: 0 auto;
+  background: rgba(236, 240, 241, .9);
+  width: 350px;
+  border-radius: 5px;
+  box-shadow: 3px 3px 10px #333;
+  padding: 15px;
+
+  text-align: center;
 }
 
 .update_form input {
-    padding: 10px;
     margin: 6px;
     color: white;
-    background-color: rgb(107,161,164);
+    background-color: rgba(0, 0, 0, .8);
     border: none;
+    width: 300px;
     font-size: 16px;
     border-radius: 5px;
-}
 
+}
 .update_form input::placeholder {
   color: white;
+}
+
+.image_file {
+  text-align:
 }

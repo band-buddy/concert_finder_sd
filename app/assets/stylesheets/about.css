@@ -1,16 +1,15 @@
 .event_section {
-  background: url('/assets/about.jpg') no-repeat;
+  background: url('/assets/about-background.jpg') no-repeat;
   background-size: cover;
-  background-position: center top;
+  min-height: 100vh;
+  padding-top: 100px;
+}
+
+.meet-the-people {
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
   justify-content: space-around;
-  padding-top: 100px;
-}
-
-.flex-card-heading > h3 {
-  margin: 10px 0px 10px 15px;
 }
 
 .event-card {
@@ -35,7 +34,6 @@
 }
 
 .flex-card-content {
-  font-size: 95%;
 	display:flex;
 	flex:1 0 auto;
 	flex-direction:column;
