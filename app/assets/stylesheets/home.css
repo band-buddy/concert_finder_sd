@@ -64,12 +64,13 @@
   animation-fill-mode: forwards;
 }
 
-.homeButton {
+/* .homeButton {
   padding: 15px 10px;
   margin-top: 15px;
   font-size: 50%;
   color: white;
   background-color: rgba(235, 120, 240, .9);
+
 }
 
 @media only screen and (max-width: 1000px) {
@@ -91,3 +92,5 @@
     font-size: 1.6rem;
   }
 }
+
+} */
