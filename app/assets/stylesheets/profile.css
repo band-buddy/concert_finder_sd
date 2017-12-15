@@ -48,7 +48,7 @@
   background-color: rgba(0, 0, 0, 0.5);
   /* text-align: center; */
   padding: 5px;
-
+}
 
 .edit_button {
   padding: 5px;
@@ -63,7 +63,6 @@
   text-decoration: none;
   max-width: 150px;
 }
-
 
 .events_section {
   margin-top: 80px;
