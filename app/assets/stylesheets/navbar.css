@@ -1,8 +1,7 @@
-header {
+.navBar {
   display: flex;
+  flex-direction: row;
   justify-content: flex-end;
-  align-items: center;
-  overflow: hidden;
   padding: 20px;
   background-color: transparent;
   position: absolute;
@@ -10,12 +9,11 @@ header {
   min-width: 100%;
 }
 
-header ul {
-  display: flex;
-  flex-direction: row;
-  justify-content: flex-end;
+.navBar ul {
+  list-style-type: none;
 }
-header li {
+
+.navBar li {
   float: left;
   font-size: 20px;
   list-style-type: none;
@@ -23,29 +21,33 @@ header li {
   padding-right: 20px;
 }
 
-header li a {
+.navBar li a {
   color: #FFFFFF;
   text-decoration: none;
 }
 
-header li a:hover {
+.navBar li a:hover {
   color: #2D2D2D;
 }
 
-header button {
+.navBar button {
   font-family: 'Rubik', sans-serif;
   background-color: transparent;
   border: none;
   font-size: 20px;
 }
 
-header button a {
+.navBar button a {
   color: white;
   text-decoration: none;
 }
 
-header button a:hover {
+.navBar button a:hover {
   color: #2D2D2D;
+}
+
+.nav-button {
+  list-style-type: none;
 }
 
 #signup {
@@ -55,22 +57,8 @@ header button a:hover {
   border-radius: 5px;
 }
 
-.nav-button {
-    margin-bottom: 1px;
-}
-
-.nav-button a {
-  text-decoration: none;
-  font-size: 20px;
-  color: white;
-}
-
-.nav-button a:hover {
-  color: #2D2D2D;
-}
-
-
 .label {
+  position: absolute;
   margin: 0 40px 0 0;
   font-size: 30px;
   line-height: 70px;
@@ -84,15 +72,10 @@ header button a:hover {
   display: none;
 }
 
-@media only screen and (max-width: 760px) {
+/* @media only screen and (max-width: 760px) {
  .label {
-    padding: 3px 7px;
     display: block;
     cursor: pointer;
-  }
-
-  nav {
-    background-color: #2D2D2D;
   }
 
   .menu {
@@ -101,7 +84,7 @@ header button a:hover {
   }
 
   .menu ul {
-    clear: right;
+    clear: both;
     margin: 50px;
     display: flex;
     flex-direction: column;
@@ -124,4 +107,4 @@ header button a:hover {
     display: block;
   }
 
-}
+} */
