@@ -60,14 +60,6 @@ export default class Pop extends Component {
           <p>{this.props.country_abbr}</p>
           <p>{this.props.postal}</p>
           <p>{this.props.description}</p>
-          <div style={{width: '600px', height: '400px'}}>
-            <GoogleMap
-              bootstrapURLKeys={{key: this.props.googleApiKey}}
-              center={[32.7096298,-117.1602029]}
-              zoom={18}
-            >
-            </GoogleMap>
-          </div>
           <button>Add to Profile</button>
         </Modal>
       </div>
