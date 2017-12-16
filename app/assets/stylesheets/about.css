@@ -20,22 +20,24 @@
   margin: 40px 10px;
   box-shadow: 0 0px 0px 0 rgba(0,0,0,0.2);
   border-radius: 5px;
-  min-width: 300px;
+  width: 305px;
   padding: 20px;
 }
 
 .flex-card:hover{
-    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+  box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
 }
 
-.flex-card-image > img {
-    border-top-right-radius: 5px;
-    border-top-left-radius: 5px;
+.event-card-image > img {
+  height: 250px;
+  width: 270px;
+  border-top-right-radius: 5px;
+  border-top-left-radius: 5px;
 }
 
-.flex-card-content {
+.event-card-content {
 	display:flex;
-	flex:1 0 auto;
+	flex:1;
 	flex-direction:column;
   margin: 10px 0px 10px 0px;
   max-width: 400px;
