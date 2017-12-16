@@ -1,13 +1,14 @@
 <!DOCTYPE html>
 <html>
   <div id="full_page">
-    <body class="profile">
+    <body>
       <main class="profile_main">
         <section class="profile_section">
           <h1 class="profile_h1"><%= current_user.username %>'s Profile</h1>
           <div class="top">
             <div class="profile_image">
               <%= link_to image_tag(@user.image.url(:large)), @user.image.url %> <br />
+              <a class="find_shows_button" href="/events">Find Shows</a><br/>
             </div>
             <div class="profile_info">
               <p>Username: <%= current_user.username %></p><br>
@@ -23,23 +24,12 @@
         </section>
         <section class="events_section">
           <h2 class="profile_h2">Saved Events:</h2>
-          <a class="find_shows_button" href="/events">Find Shows</a><br/>
-          <table class="saved_events">
-            <thead>
-              <tr>
-                <td>Title</td>
-                <td>Date</td>
-                <td>Venue</td>
-              </tr>
-            </thead>
-            <tbody>
-              <tr>
-                <td>V-Ron and the Kidz</td>
-                <td>2017-12-15 20:00:00</td>
-                <td>Cafe21</td>
-              </tr>
-            </tbody>
-          </table>
+
+          <div class="saved_events">
+                <p class=event_info>V-Ron and the Kidz</p>
+                <p class=event_info>2017-12-15 20:00:00</p>
+                <p class=event_info>Cafe21</p>
+          </div>
         </section>
       </main>
     </body>
