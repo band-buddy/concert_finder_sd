@@ -27,7 +27,7 @@ export default class Footer extends Component {
     return(
       <footer>
         {footerItems}
-        <div className="footerimages">
+        <div className="footer-images">
           <a href="https://www.facebook.com" target="_blank"><img src="/assets/if_facebook_online_social_media_734399.png" /></a>
           <a href="https://www.instagram.com" target="_blank"><img src="/assets/if_instagram_online_social_media_734394.png" /></a>
           <a href="https://www.twitter.com" target="_blank"><img src="/assets/if_online_social_media_twitter_734377.png" /></a>
