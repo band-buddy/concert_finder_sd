@@ -29,7 +29,9 @@ export default class Events extends Component {
             postal={event.postal_code}
             description={event.description}
           />
+          <form action="">
           <button onClick={addEvent}>Add this event to your profile!</button>
+          </form>
         </div>
       </li>
      )
