@@ -1,20 +1,8 @@
 .profile_main {
-<<<<<<< HEAD
-  background: url('/assets/guitar.jpeg') no-repeat;
-  background-size: cover;
-  padding: 80px 35px;
-  min-height: 100vh;
-  /* max-width: 1000px; */
-}
-
-.profile_section {
-  max-width: 1000px;
-=======
   background: url('/assets/smoke.jpg') no-repeat;
   background-size: cover;
   padding: 80px 35px;
   min-height: 100vh;
->>>>>>> 3eca8731c23922c0da6265506c415c0609330959
 }
 
 .profile_h1 {

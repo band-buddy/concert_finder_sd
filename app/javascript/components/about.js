@@ -9,7 +9,7 @@ export default class About extends Component {
           name: "Greg Foreman",
           image: "/assets/Greg-F.png",
           description: "Greg moved to San Diego from Chicago to pursue his careeer in Web Development. When he's not busy creating cool apps, he likes to surf, ride his bike, and dabble in photography. And, he loves music.",
-          current: "Currently listening to: his own music"
+          current: "Currently listening to: his own music.  This is some text."
         },
         {
           name: "Ryan Wehr",
