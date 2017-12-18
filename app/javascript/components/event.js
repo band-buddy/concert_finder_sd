@@ -3,24 +3,35 @@ import Pop from './modal.js';
 import Header from 'components/header.js';
 
 export default class Events extends Component {
+
    render(){
+     function addEvent(){
+       console.log(event.venue_name + "has been clicked")
+       // send all pertinent data in an object to the profile edit page
+       console.log(event)
+       // finally, change button content to "Added to your profile"
+     }
+     var event = this.props.event
      return(
       <li>
-        <div className="title">{this.props.event.title}</div>
-        <div>{this.props.event.venue_name}</div>
-        <div>{this.props.event.start_time}</div>
-        <div>{this.props.event.venue_address} - {this.props.event.city_name} - {this.props.event.country_abbr} - {this.props.event.postal_code}</div>
+        <div className="title">{event.title}</div>
+        <div>{event.venue_name}</div>
+        <div>{event.start_time}</div>
+        <div>{event.venue_address} - {event.city_name} - {event.country_abbr} - {event.postal_code}</div>
         <div>
           <Pop
-            title={this.props.event.title}
-            venue={this.props.event.venue_name}
-            time={this.props.event.start_time}
-            address={this.props.event.venue_address}
-            city={this.props.event.city_name}
-            country={this.props.event.country_abbr}
-            postal={this.props.event.postal_code}
-            description={this.props.event.description}
+            title={event.title}
+            venue={event.venue_name}
+            time={event.start_time}
+            address={event.venue_address}
+            city={event.city_name}
+            country={event.country_abbr}
+            postal={event.postal_code}
+            description={event.description}
           />
+          <form action="">
+          <button onClick={addEvent}>Add this event to your profile!</button>
+          </form>
         </div>
       </li>
      )

@@ -8,10 +8,12 @@ const customStyles = {
   content : {
     top    : '50%',
     left   : '50%',
-    right  : 'auto',
+    right  : '600px',
     bottom : 'auto',
     marginRight : '-50%',
-    transform : 'translate(-50%, -50%)'
+    transform : 'translate(-50%, -50%)',
+    backgroundColor: 'rgba(255,255,255,.8)',
+    color : '#2D2D2D'
   }
 };
 
@@ -32,7 +34,7 @@ export default class Pop extends Component {
   }
 
   afterOpenModal() {
-    this.subtitle.style.color = '#f00';
+    this.subtitle.style.color = '#2D2D2D';
   }
 
   closeModal(){
@@ -60,14 +62,6 @@ export default class Pop extends Component {
           <p>{this.props.country_abbr}</p>
           <p>{this.props.postal}</p>
           <p>{this.props.description}</p>
-          <div style={{width: '600px', height: '400px'}}>
-            <GoogleMap
-              bootstrapURLKeys={{key: this.props.googleApiKey}}
-              center={[32.7096298,-117.1602029]}
-              zoom={18}
-            >
-            </GoogleMap>
-          </div>
           <button>Add to Profile</button>
         </Modal>
       </div>

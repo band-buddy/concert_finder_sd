@@ -59,6 +59,7 @@
   animation-fill-mode: forwards;
 }
 
+<<<<<<< HEAD
 
 /* .homeButton {
   padding: 15px 10px;
@@ -68,6 +69,8 @@
   background-color: rgba(235, 120, 240, .9);
 
 }
+=======
+>>>>>>> 3eca8731c23922c0da6265506c415c0609330959
 
 @media only screen and (max-width: 1000px) {
   .appName {
@@ -81,7 +84,7 @@
 
 @media only screen and (max-width: 760px) {
   .appName {
-    font-size: 2rem;
+    font-size: 3rem;
   }
 
   .fadeText {
@@ -89,5 +92,9 @@
   }
 }
 
+<<<<<<< HEAD
 } */
 
+=======
+}
+>>>>>>> 3eca8731c23922c0da6265506c415c0609330959

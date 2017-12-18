@@ -19,6 +19,10 @@ Rails.application.config.assets.precompile += %w(events_list.css)
 Rails.application.config.assets.precompile += %w(login.css)
 Rails.application.config.assets.precompile += %w(signup.css)
 Rails.application.config.assets.precompile += %w(forgot-password.css)
+<<<<<<< HEAD
+=======
+Rails.application.config.assets.precompile += %w(modal.css)
+>>>>>>> 3eca8731c23922c0da6265506c415c0609330959
 
 
 
