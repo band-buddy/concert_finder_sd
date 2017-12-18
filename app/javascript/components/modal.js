@@ -8,10 +8,12 @@ const customStyles = {
   content : {
     top    : '50%',
     left   : '50%',
-    right  : 'auto',
+    right  : '600px',
     bottom : 'auto',
     marginRight : '-50%',
-    transform : 'translate(-50%, -50%)'
+    transform : 'translate(-50%, -50%)',
+    backgroundColor: 'rgba(255,255,255,.8)',
+    color : '#2D2D2D'
   }
 };
 
@@ -32,7 +34,7 @@ export default class Pop extends Component {
   }
 
   afterOpenModal() {
-    this.subtitle.style.color = '#f00';
+    this.subtitle.style.color = '#2D2D2D';
   }
 
   closeModal(){
