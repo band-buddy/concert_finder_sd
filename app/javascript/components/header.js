@@ -33,11 +33,9 @@ export default class Header extends Component {
       )
     });
     return(
-      <nav>
-        <ul className="navBar">
-          {navItems}
-        </ul>
-      </nav>
+      <ul>
+        {navItems}
+      </ul>
     )
   }
 }

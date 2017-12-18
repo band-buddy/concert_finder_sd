@@ -32,12 +32,10 @@ export default class SignedIn extends Component {
       )
     });
     return(
-      <nav>
-        <ul className="navBar">
-          {navItems}
-          <li id="signup"><a href="/user/sign_up">Sign Up</a></li>
-        </ul>
-      </nav>
+      <ul>
+        {navItems}
+        <li id="signup"><a href="/user/sign_up">Sign Up</a></li>
+      </ul>
     )
   }
 }
