@@ -11,12 +11,12 @@ export default class Header extends Component {
           link: "http://localhost:3000/"
         },
         {
-          name: "About",
-          link: "/about"
-        },
-        {
           name: "Events",
           link: "/events"
+        },
+        {
+          name: "About",
+          link: "/about"
         },
         {
           name: "Profile",
@@ -33,7 +33,7 @@ export default class Header extends Component {
       )
     });
     return(
-      <ul>
+      <ul id="menu">
         {navItems}
       </ul>
     )
