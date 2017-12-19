@@ -10,12 +10,12 @@ export default class SignedIn extends Component {
           link: "http://localhost:3000/"
         },
         {
-          name: "About",
-          link: "/about"
-        },
-        {
           name: "Events",
           link: "/events"
+        },
+        {
+          name: "About",
+          link: "/about"
         },
         {
           name: "Login",
@@ -32,7 +32,7 @@ export default class SignedIn extends Component {
       )
     });
     return(
-      <ul>
+      <ul id="menu">
         {navItems}
         <li id="signup"><a href="/user/sign_up">Sign Up</a></li>
       </ul>
