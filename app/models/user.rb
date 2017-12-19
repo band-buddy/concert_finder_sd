@@ -1,5 +1,7 @@
 class User < ApplicationRecord
   has_one :profile
+  has_many :attendances
+  has_many :event_tables , through: :attendances
   devise :database_authenticatable, :registerable,
          :recoverable, :rememberable, :trackable, :validatable
 

@@ -22,6 +22,7 @@ export default class Events extends Component {
         <div>{event.venue_address} - {event.city_name} - {event.country_abbr} - {event.postal_code}</div>
         <div>
           <Pop
+            id={event.id}
             title={event.title}
             venue={event.venue_name}
             time={event.start_time}
