@@ -1,0 +1,2 @@
+class EventTable < ApplicationRecord
+end
