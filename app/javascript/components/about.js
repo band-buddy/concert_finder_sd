@@ -59,7 +59,7 @@ export default class About extends Component {
     });
     return(
       <div className="event_section">
-        <h1>Meet The Team</h1>
+        <h1 className="h1-media-query">Meet The Team</h1>
           <div className="meet-the-people">
             {people}
           </div>
