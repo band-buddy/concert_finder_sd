@@ -2,6 +2,12 @@ import React, {Component} from 'react';
 import Pop from './modal.js';
 import Header from 'components/header.js';
 
+const customStyles = {
+  content : {
+      backgroundColor: 'rgba(255, 255, 255, 0)'
+  }
+};
+
 export default class Events extends Component {
 
    render(){
@@ -21,7 +27,7 @@ export default class Events extends Component {
         <div>{event.start_time}</div>
         <div>{event.venue_address} - {event.city_name} - {event.country_abbr} - {event.postal_code}</div>
         <div>
-          <Pop
+          <Pop 
             title={event.title}
             venue={event.venue_name}
             time={event.start_time}
@@ -30,6 +36,7 @@ export default class Events extends Component {
             country={event.country_abbr}
             postal={event.postal_code}
             description={event.description}
+            style={customStyles}
           />
 
           <button onClick={addEvent}>Add this event to your profile!</button>

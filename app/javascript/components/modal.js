@@ -12,8 +12,16 @@ const customStyles = {
     bottom : 'auto',
     marginRight : '-50%',
     transform : 'translate(-50%, -50%)',
-    backgroundColor: 'rgba(255,255,255,.8)',
+    backgroundColor: 'rgba(255,255,255,.93)',
     color : '#2D2D2D'
+  },
+  overlay : {
+  position          : 'fixed',
+  top               : 0,
+  left              : 0,
+  right             : 0,
+  bottom            : 0,
+  backgroundColor   : 'rgba(114, 28, 119, .6)'
   }
 };
 
@@ -53,7 +61,7 @@ export default class Pop extends Component {
             contentLabel="Example Modal"
             ariaHideApp={false}
           >
-          <button onClick={this.closeModal}>close</button>
+          <button className="modal_button" onClick={this.closeModal}>close</button>
           <h2 ref={subtitle => this.subtitle = subtitle}>{this.props.title}</h2>
           <p>{this.props.venue}</p>
           <p>{this.props.time}</p>
@@ -62,7 +70,7 @@ export default class Pop extends Component {
           <p>{this.props.country_abbr}</p>
           <p>{this.props.postal}</p>
           <p>{this.props.description}</p>
-          <button>Add to Profile</button>
+          <button className="modal_button">Add to Profile</button>
         </Modal>
       </div>
     )}

@@ -36,15 +36,6 @@ ActiveRecord::Schema.define(version: 20171218231315) do
     t.datetime "updated_at", null: false
   end
 
-  create_table "profiles", force: :cascade do |t|
-    t.string "username"
-    t.string "first_name"
-    t.string "last_name"
-    t.string "phone_number"
-    t.date "date_of_birth"
-    t.string "description"
-  end
-
   create_table "users", force: :cascade do |t|
     t.string "email", default: "", null: false
     t.string "encrypted_password", default: "", null: false
@@ -62,14 +53,14 @@ ActiveRecord::Schema.define(version: 20171218231315) do
     t.string "first_name"
     t.string "last_name"
     t.date "date_of_birth"
-    t.string "phone_number"
     t.string "description"
+    t.string "phone_number"
+    t.string "provider"
+    t.string "uid"
     t.string "image_file_name"
     t.string "image_content_type"
     t.integer "image_file_size"
     t.datetime "image_updated_at"
-    t.string "provider"
-    t.string "uid"
     t.index ["email"], name: "index_users_on_email", unique: true
     t.index ["reset_password_token"], name: "index_users_on_reset_password_token", unique: true
   end
