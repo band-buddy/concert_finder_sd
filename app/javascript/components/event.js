@@ -6,10 +6,12 @@ export default class Events extends Component {
 
    render(){
      function addEvent(){
-       console.log(event.venue_name + "has been clicked")
+       // console.log(event.venue_name + "has been clicked")
        // send all pertinent data in an object to the profile edit page
-       console.log(event)
+       // console.log(event)
        // finally, change button content to "Added to your profile"
+       var profile_event = {title: event.title, start_time: event.start_time, venue: event.venue_name}
+       console.log(profile_event)
      }
      var event = this.props.event
      return(
@@ -29,9 +31,9 @@ export default class Events extends Component {
             postal={event.postal_code}
             description={event.description}
           />
-          <form action="">
+
           <button onClick={addEvent}>Add this event to your profile!</button>
-          </form>
+
         </div>
       </li>
      )
