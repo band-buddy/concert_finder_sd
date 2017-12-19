@@ -5,6 +5,10 @@
   padding-top: 100px;
 }
 
+.event_section h1 {
+  text-align: center;
+}
+
 .meet-the-people {
   display: flex;
   flex-direction: row;
@@ -41,4 +45,21 @@
 	flex-direction:column;
   margin: 10px 0px 10px 0px;
   max-width: 400px;
+}
+
+@media only screen and (max-width: 1000px) {
+  .h1-media-query {
+    font-size: 4.0rem;
+  }
+  .h2-media-query {
+    font-size: 1.9rem;
+  }
+}
+@media only screen and (max-width: 760px) {
+  .h1-media-query {
+    font-size: 3.0rem;
+  }
+  .h2-media-query {
+    font-size: 1.3rem;
+  }
 }
