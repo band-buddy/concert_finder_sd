@@ -52,7 +52,7 @@ export default class Pop extends Component {
   render() {
     return (
       <div>
-        <button onClick={this.openModal}>More Info</button>
+        <button className="event-list-buttons" onClick={this.openModal}>More Info</button>
           <Modal
             isOpen={this.state.modalIsOpen}
             onAfterOpen={this.afterOpenModal}
@@ -61,8 +61,13 @@ export default class Pop extends Component {
             contentLabel="Example Modal"
             ariaHideApp={false}
           >
+
           <button className="modal_button" onClick={this.closeModal}>close</button>
           <h2 ref={subtitle => this.subtitle = subtitle}>{this.props.title}</h2>
+
+          <button onClick={this.closeModal}>close</button>
+          <h2 ref={subtitle => this.subtitle = subtitle}>{this.props.title}</h2><br />
+          <p>{this.props.id}</p>
           <p>{this.props.venue}</p>
           <p>{this.props.time}</p>
           <p>{this.props.address}</p>
@@ -71,6 +76,15 @@ export default class Pop extends Component {
           <p>{this.props.postal}</p>
           <p>{this.props.description}</p>
           <button className="modal_button">Add to Profile</button>
+          <p>{this.props.postal}</p><br />
+          <p>{this.props.description}</p><br />
+          <form action="/attendances" method="post">
+            <input type="hidden" value={this.props.title} name="title" />
+            <input type="hidden" value={this.props.time} name="date" />
+            <input type="hidden" value={this.props.venue} name="venue" />
+            <input type="hidden" value={this.props.id} name="eventful_identifier" />
+            <input type="submit" value="Add to profile!" />
+          </form>
         </Modal>
       </div>
     )}
