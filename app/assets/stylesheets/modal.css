@@ -1,3 +1,7 @@
-.ReactModal__Overlay {
-  background-color: black;
+/*.ReactModal__Overlay {
+  background-color: pink;
+}*/
+.modal_button {
+  background-color: rgba(0, 0, 0, .8);
+  color: white;
 }
