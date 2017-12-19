@@ -23,12 +23,14 @@
     <%= javascript_pack_tag 'application' %>
   </head>
 
-  <body>
+  <body id="body">
     <header>
       <div class="nav">
-        <label for="toggle" class="label">&#9776;</label>
-        <input type="checkbox" id="toggle"/>
-        <div class="menu">
+        <div id="menuToggle">
+          <input id="toggle" type="checkbox"/>
+          <span id="span"></span>
+          <span id="span"></span>
+          <span id="span"></span>
             <% if user_signed_in? %>
               <div class="navBar">
                 <%= react_component("Header") %>

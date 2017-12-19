@@ -18,7 +18,6 @@
   border: none;
   border-radius: 5px;
   padding: 5px;
-  text-align: center;
 }
 
 .cardsSection {
@@ -35,6 +34,7 @@
     opacity: 1;
   }
 }
+
 .appName {
   font-size: 4rem;
   top: 10.5rem;
@@ -46,6 +46,7 @@
   animation-duration: 5s;
   animation-fill-mode: forwards;
 }
+
 .fadeText {
   font-size: 3.4rem;
   top: 10.5rem;
@@ -58,28 +59,13 @@
   animation-fill-mode: forwards;
 }
 
-.homeButton {
-  padding: 15px 10px;
-  margin-top: 15px;
-  font-size: 50%;
-  color: white;
-  background-color: rgba(235, 120, 240, .9);
-}
-
 @media only screen and (max-width: 1000px) {
   .appName {
     font-size: 3rem;
   }
+
   .fadeText {
     font-size: 2.4rem;
-  }
-  .homeSearch {
-    width: 50%;
-    font-size: .4em;
-    border: none;
-    border-radius: 5px;
-    padding: 10px;
-    text-align: center;
   }
 }
 
@@ -87,22 +73,8 @@
   .appName {
     font-size: 3rem;
   }
+
   .fadeText {
     font-size: 1.6rem;
-  }
-  .homeSearch {
-    width: 85%;
-    font-size: .3em;
-    border: none;
-    border-radius: 5px;
-    padding: 10px;
-    text-align: center;
-  }
-  .homeButton {
-    padding: 10px 15px;
-    margin-top: 10px;
-    font-size: 40%;
-    color: white;
-    background-color: rgba(235, 120, 240, .9);
   }
 }

@@ -16,16 +16,16 @@ export default class AppInfo extends Component {
         {
           icon: "/assets/create_profile.jpg",
           title: "Create a profile.",
-          description: "Sign up and save events to your page.",
+          description: "Sign up and create a personalized profile page",
           link: "/user/sign_up",
-          linkName: "Update Your Profile"
+          linkName: "Signup Today"
         },
         {
           icon: "/assets/find_friend",
-          title: "Find a friend",
-          description: "Looking for concert buddies? Check to see who else is going to the show and link up with them before the concert.",
-          link: "/user/sign_up",
-          linkName: "Signup Today"
+          title: "Add events to your profile",
+          description: "Keep track of your upcoming shows! Head over to the Events page, click on 'more info', and add that event directly to your profile page.",
+          link: "/events",
+          linkName: "Add Events"
         }
       ]
     }
