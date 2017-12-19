@@ -59,19 +59,6 @@
   animation-fill-mode: forwards;
 }
 
-<<<<<<< HEAD
-
-/* .homeButton {
-  padding: 15px 10px;
-  margin-top: 15px;
-  font-size: 50%;
-  color: white;
-  background-color: rgba(235, 120, 240, .9);
-
-}
-=======
->>>>>>> 3eca8731c23922c0da6265506c415c0609330959
-
 @media only screen and (max-width: 1000px) {
   .appName {
     font-size: 3rem;
@@ -91,10 +78,3 @@
     font-size: 1.6rem;
   }
 }
-
-<<<<<<< HEAD
-} */
-
-=======
-}
->>>>>>> 3eca8731c23922c0da6265506c415c0609330959
