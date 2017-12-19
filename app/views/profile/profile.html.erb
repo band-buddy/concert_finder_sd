@@ -8,7 +8,7 @@
           <div class="top">
             <div class="profile_image">
               <%= link_to image_tag(@user.image.url(:large)), @user.image.url %> <br />
-              <a class="find_shows_button" href="/events">Find Shows</a><br/>
+              <a class="find_shows_button profile-buttons" href="/events">Find Shows</a><br/>
             </div>
             <div class="profile_info">
               <p>Username: <%= current_user.username %></p><br>
@@ -18,7 +18,7 @@
               <p>DOB: <%= current_user.date_of_birth %></p><br>
               <p>Phone Number: <%= current_user.phone_number %></p><br>
               <p>Description: <%= current_user.description %></p>
-              <a href="/profile/update" class="edit_button">Edit Profile</a>
+              <a href="/profile/update" class="edit_button profile-buttons">Edit Profile</a>
             </div>
           </div>
         </section>

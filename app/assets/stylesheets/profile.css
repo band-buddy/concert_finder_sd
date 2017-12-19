@@ -1,41 +1,27 @@
 .profile_main {
   background: url('/assets/smoke.jpg') no-repeat;
   background-size: cover;
-  padding: 80px 35px;
+  padding-top: 150px;
   min-height: 100vh;
 }
 
-.profile_h1 {
-  display: flex;
-  text-align: center;
-  justify-content: center;
-  font-size: 40px;
-  margin-bottom: 15px;
-  color: white;
-  text-shadow: 3px 3px black;
-}
-
 .profile_h2 {
-  display: flex;
   text-align: center;
-  justify-content: center;
-  color: white;
-  text-shadow: 3px 3px black;
-  margin-top: 40px;
+  margin-bottom: 20px;
 }
 
 .top {
   display: flex;
-  flex-direction: row;
+  flex-flow: row wrap;
   justify-content: center;
-  flex-wrap: wrap;
+  margin-top: 20px;
+  margin-bottom: 50px;
 }
 
 .profile_image {
-  margin-bottom: 10px;
-  margin-left: 51px;
   display: flex;
   flex-direction: column;
+  align-content: center;
 }
 
 .profile_info {
@@ -44,21 +30,35 @@
   margin: 0px 50px;
   font-size: 20px;
   color: white;
-  text-shadow: 2px 2px black;
   background-color: rgba(0, 0, 0, 0.5);
-  padding: 5px;
+  padding: 10px;
+  max-width: 400px;
+}
+
+.profile-buttons {
+  border-radius: 5px;
+  color: #2D2D2D;
+  background-color: #ecf0f1;
+  border: none;
+  text-align: center;
+  text-decoration: none;
+  font-size: 16px;
+}
+
+.profile-buttons a {
+  text-decoration: none;
+}
+
+.profile-buttons:hover {
+  background-color: #2D2D2D;
+  color: #ecf0f1 !important;
 }
 
 .edit_button {
-  padding: 5px;
-  margin-top: 15px;
-  color: white;
-  text-shadow: 2px 2px black;
-  background-color: rgba(105, 105, 105, .4);
-  border: none;
-  font-size: 16px;
-  border-radius: 5px;
-  text-align: center;
+  padding: 5px 10px;
+  display: inline-block;
+  margin-top: 10px;
+  width: 100px;
 }
 
 .events_section {
@@ -67,15 +67,7 @@
 }
 
 .find_shows_button{
-  padding: 50px 108px;
-  margin-top: 15px;
-  color: white;
-  text-shadow: 2px 2px black;
-  background-color: rgba(105, 105, 105, .35);
-  border: none;
-  font-size: 16px;
-  border-radius: 5px;
-  text-align: center;
+  padding: 40px;
 }
 
 .saved_events {
