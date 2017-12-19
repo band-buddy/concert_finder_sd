@@ -62,20 +62,14 @@ export default class Pop extends Component {
             ariaHideApp={false}
           >
 
+
           <button className="modal_button" onClick={this.closeModal}>close</button>
           <h2 ref={subtitle => this.subtitle = subtitle}>{this.props.title}</h2>
-
-          <button onClick={this.closeModal}>close</button>
-          <h2 ref={subtitle => this.subtitle = subtitle}>{this.props.title}</h2><br />
-          <p>{this.props.id}</p>
           <p>{this.props.venue}</p>
           <p>{this.props.time}</p>
           <p>{this.props.address}</p>
           <p>{this.props.city}</p>
           <p>{this.props.country_abbr}</p>
-          <p>{this.props.postal}</p>
-          <p>{this.props.description}</p>
-          <button className="modal_button">Add to Profile</button>
           <p>{this.props.postal}</p><br />
           <p>{this.props.description}</p><br />
           <form action="/attendances" method="post">
@@ -83,7 +77,7 @@ export default class Pop extends Component {
             <input type="hidden" value={this.props.time} name="date" />
             <input type="hidden" value={this.props.venue} name="venue" />
             <input type="hidden" value={this.props.id} name="eventful_identifier" />
-            <input type="submit" value="Add to profile!" />
+            <input className="modal_button" type="submit" value="Add to profile!" />
           </form>
         </Modal>
       </div>
