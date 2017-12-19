@@ -7,56 +7,55 @@ class ProfileController < ApplicationController
     render 'profile.html.erb'
   end
 
-  def update
-
-    # if user_params
-    #   @user.update(user_params)
-    #   @user.save
-    #   redirect_to profile_path
-    # end
-    #   @user.update(username: params[:username])
-    #   @user.save
-    #   redirect_to profile_path
-    # end
-    # if params.has_key?(:first_name)
-    #   @user.update(first_name: params[:first_name])
-    #   @user.save
-    #   redirect_to profile_path
-    # end
-    # if params.has_key?(:last_name)
-    #   @user.update(last_name: params[:last_name])
-    #   @user.save
-    #   redirect_to profile_path
-    # end
-    # if params.has_key?(:date_of_birth)
-    #   @user.update(date_of_birth: params[:date_of_birth])
-    #   @user.save
-    #   redirect_to profile_path
-    # end
-    # if params.has_key?(:phone_number)
-    #   @user.update(phone_number: params[:phone_number])
-    #   @user.save
-    #   redirect_to profile_path
-    # end
-    # if params.has_key?(:email)
-    #   @user.update(email: params[:email])
-    #   @user.save
-    #   redirect_to profile_path
-    # end
-    # if params.has_key?(:description)
-    #   @user.update(description: params[:description])
-    #   @user.save
-    #   redirect_to profile_path
-    # end
-    # if params.has_key?(:image)
-    #  @user.update(image: params[:image])
-    #  @user.save
-    #  redirect_to profile_path
-    # end
-    #
-    # if @user.save
-    # end
-  end
+  # def update
+  #   if user_params
+  #     @user.update(user_params)
+  #     @user.save
+  #     redirect_to profile_path
+  #   end
+  #     @user.update(username: params[:username])
+  #     @user.save
+  #     redirect_to profile_path
+  #   end
+  #   if params.has_key?(:first_name)
+  #     @user.update(first_name: params[:first_name])
+  #     @user.save
+  #     redirect_to profile_path
+  #   end
+  #   if params.has_key?(:last_name)
+  #     @user.update(last_name: params[:last_name])
+  #     @user.save
+  #     redirect_to profile_path
+  #   end
+  #   if params.has_key?(:date_of_birth)
+  #     @user.update(date_of_birth: params[:date_of_birth])
+  #     @user.save
+  #     redirect_to profile_path
+  #   end
+  #   if params.has_key?(:phone_number)
+  #     @user.update(phone_number: params[:phone_number])
+  #     @user.save
+  #     redirect_to profile_path
+  #   end
+  #   if params.has_key?(:email)
+  #     @user.update(email: params[:email])
+  #     @user.save
+  #     redirect_to profile_path
+  #   end
+  #   if params.has_key?(:description)
+  #     @user.update(description: params[:description])
+  #     @user.save
+  #     redirect_to profile_path
+  #   end
+  #   if params.has_key?(:image)
+  #    @user.update(image: params[:image])
+  #    @user.save
+  #    redirect_to profile_path
+  #   end
+  #
+  #   if @user.save
+  #   end
+  # end
 
   def update_logic
     respond_to do |format|

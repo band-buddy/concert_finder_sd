@@ -9,9 +9,8 @@
   image-rendering: crisp-edges;
 }
 
-#full_page {
-  min-height: 100vh;
-}
+
+/*General Universal Selectors */
 
 html {
   font-family: arial, helvetica, sans-serif;
@@ -35,21 +34,6 @@ button:hover {
   color: #ecf0f1;
 }
 
-.actions input {
-  color: #2D2D2D;
-  background-color: #ecf0f1;
-  padding: 5px 10px;
-}
-
-.actions input:hover {
-  background-color: #2D2D2D;
-  color: #ecf0f1;
-}
-
-.field {
-  padding-top: 5px;
-  padding-bottom: 5px;
-}
 
 input {
   font-size: 16px;
@@ -69,22 +53,21 @@ input:-webkit-autofill {
 }
 
 h1, h2, h3 {
-  font-family: 'Rubik', Arial, helvetica, sans-serif;
+  font-family: 'Open Sans', Arial, helvetica, sans-serif;
 }
 
 h1 {
-  font-size: 40px;
-  text-align: center;
+  font-size: 5.0rem;
   color: white;
-  padding: 10px;
 }
 
 h2 {
-  font-size: 30px;
+  font-size: 3.0rem;
+  padding-bottom: .5em;
 }
 
 h3 {
-  font-size: 20px;
+  font-size: 1.2rem;
 }
 
 a {
@@ -94,4 +77,22 @@ a {
 
 a:hover {
   color: #C2A5C9;
+}
+
+/*Rails View Page Universal Styles*/
+
+.actions input {
+  color: #2D2D2D;
+  background-color: #ecf0f1;
+  padding: 5px 10px;
+}
+
+.actions input:hover {
+  background-color: #2D2D2D;
+  color: #ecf0f1;
+}
+
+.field {
+  padding-top: 5px;
+  padding-bottom: 5px;
 }
