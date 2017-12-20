@@ -2,6 +2,11 @@
   background-color: pink;
 }*/
 .modal_button {
-  background-color: rgba(0, 0, 0, .8);
-  color: white;
+  background-color: rgb(45, 45, 45);
+  color: #ecf0f1;
+}
+
+.modal_button:hover {
+  background-color: rgb(255, 255, 255);
+  color: #2D2D2D;
 }

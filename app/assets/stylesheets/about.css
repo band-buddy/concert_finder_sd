@@ -1,15 +1,16 @@
-.event_section {
+.about-section {
   background: url('/assets/about-background.jpg') no-repeat;
   background-size: cover;
-  min-height: 100vh;
-  padding-top: 100px;
+  min-height: 50vh;
+  padding-top: 150px;
 }
-
-.event_section h1 {
-  text-align: center;
-}
-
 .meet-the-people {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-around;
+}
+.header-section {
+  text-align: center;
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;

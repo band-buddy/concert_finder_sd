@@ -1,19 +1,13 @@
-<!DOCTYPE html>
-<html>
-  <div id="full_page">
-    <body class="event-body">
-      <main class="event-background">
-        <section class="event-title-search">
-          <h1 class="h1-media-query" >Events</h1>
-          <form action="/events" method="get">
-            <input class="event-search-bar" type="text" name="keyword_search" placeholder="Search by event or band"/>
-            <button type="submit">Submit</button>
-          </form>
-        </section>
-        <section class="event-listing">
-        <%= react_component('EventsList', events: @events) %>
-        </section>
-      </main>
-    </body>
-  </div>
-</html>
+<!DOCTYPE>
+<main class="event_body">
+  <section class="event-title-search">
+    <h1 class="h1-media-query" >Events</h1>
+    <form action="/events" method="get">
+      <input class="event-search-bar" type="text" name="keyword_search" placeholder="Search by event or band"/>
+      <button type="submit">Submit</button>
+    </form>
+  </section>
+  <section class="event-listing">
+  <%= react_component('EventsList', events: @events) %>
+  </section>
+</main>
