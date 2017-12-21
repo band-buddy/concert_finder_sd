@@ -1,5 +1,6 @@
 import React, {Component} from 'react';
 import Pop from './modal.js';
+import Map from './map.js'
 import Header from 'components/header.js';
 
 const customStyles = {
@@ -22,9 +23,12 @@ export default class Events extends Component {
      }
      var event = this.props.event
      var current_user = this.props.user
+     var lat = parseFloat(event.latitude)
+     var long = parseFloat(event.longitude)
 
      return(
       <li className="event-list-border">
+        <h3>{lat} {event.longitude}</h3>
         <h3>{event.title}</h3>
         <div>{event.venue_name}</div>
         <div>{event.start_time}</div>
@@ -42,8 +46,12 @@ export default class Events extends Component {
             postal={event.postal_code}
             description={event.description}
             user = {this.props.user}
+            latitude={lat}
+            longitude={long}
+
             style={customStyles}
           />
+
           <button className="event-list-buttons" onClick={addEvent}>Add this event to your profile!</button>
         </div>
       </li>

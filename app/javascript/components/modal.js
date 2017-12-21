@@ -2,6 +2,7 @@ import React, { Component } from 'react';
 import ReactDOM from 'react-dom';
 import Modal from 'react-modal';
 import Events from './event.js';
+import Map from './map.js';
 import GoogleMap from 'google-map-react';
 
 const customStyles = {
@@ -80,6 +81,10 @@ export default class Pop extends Component {
 
             <input className="modal_button" type="submit" value="Add to profile!" />
           </form>
+          <Map
+            latitude={this.props.latitude}
+            longitude={this.props.longitude}
+          />
         </Modal>
       </div>
     )}

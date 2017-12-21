@@ -3,11 +3,8 @@
   background-size: cover;
   padding-top: 150px;
   min-height: 100vh;
-}
-
-.profile_h2 {
   text-align: center;
-  margin-bottom: 20px;
+  color: white;
 }
 
 .top {
@@ -33,6 +30,7 @@
   background-color: rgba(0, 0, 0, 0.5);
   padding: 10px;
   max-width: 400px;
+  text-align: left;
 }
 
 .profile-buttons {
@@ -59,11 +57,6 @@
   display: inline-block;
   margin-top: 10px;
   width: 100px;
-}
-
-.events_section {
-  color: white;
-  text-shadow: 2px 2px black;
 }
 
 .find_shows_button{
