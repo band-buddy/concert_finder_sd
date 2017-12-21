@@ -52,7 +52,14 @@ export default class Events extends Component {
             style={customStyles}
           />
 
-          <button className="event-list-buttons" onClick={addEvent}>Add this event to your profile!</button>
+          <form action="/attendances" method="post">
+            <input type="hidden" value={event.title} name="title" />
+            <input type="hidden" value={event.start_time} name="date" />
+            <input type="hidden" value={event.venue_name} name="venue" />
+            <input type="hidden" value={event.id} name="eventful_identifier" />
+
+            <input className="modal_button" type="submit" value="Add to profile!" />
+          </form>
         </div>
       </li>
      )

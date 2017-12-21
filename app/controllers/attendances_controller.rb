@@ -7,7 +7,7 @@ class AttendancesController < ApplicationController
     @event = EventTable.where(title:params["title"], date:params["date"], venue:params["venue"], eventful_identifier:params["eventful_identifier"]).first_or_create
 
     # save the event to the user event_table
-    @user.event_tables << @event
+    @user.event_tables << @event unless @user.event_tables.include?(@event)
 
     # @created_att = Attendances.new
     # @created_att.user_id = current_user.id
