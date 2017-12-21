@@ -6,6 +6,8 @@ class ProfileController < ApplicationController
   def index
     params.permit(:username, :first_name, :last_name, :date_of_birth, :phone_number, :email, :description, :image, :utf8, :_method, :authenticity_token, :commit)
     @user = current_user
+    @events = @user.event_tables.first
+
     render 'profile.html.erb'
   end
 
@@ -64,6 +66,7 @@ class ProfileController < ApplicationController
 
 
   def profile
+
   end
 end
 
