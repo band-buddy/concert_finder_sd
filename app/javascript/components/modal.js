@@ -84,6 +84,7 @@ export default class Pop extends Component {
           <Map
             latitude={this.props.latitude}
             longitude={this.props.longitude}
+            title={this.props.title}
           />
         </Modal>
       </div>
