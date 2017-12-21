@@ -10,7 +10,7 @@ class ProfileController < ApplicationController
 >>>>>>> af143b6ef1d07569f836d02a6a33dc971dd38ca0
     params.permit(:username, :first_name, :last_name, :date_of_birth, :phone_number, :email, :description, :image, :utf8, :_method, :authenticity_token, :commit)
     @user = current_user
-    @events = @user.event_tables.first
+    @events = @user.event_tables.each
 
     render 'profile.html.erb'
   end
