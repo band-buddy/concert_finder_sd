@@ -28,7 +28,6 @@ export default class Events extends Component {
 
      return(
       <li className="event-list-border">
-        <h3>{lat} {event.longitude}</h3>
         <h3>{event.title}</h3>
         <div>{event.venue_name}</div>
         <div>{event.start_time}</div>
