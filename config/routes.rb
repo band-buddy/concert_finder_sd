@@ -12,6 +12,8 @@ Rails.application.routes.draw do
 
   post '/profile' => 'profile#index'
 
+  patch '/profile' => 'profile#index'
+
   patch '/profile/update' => 'profile#update'
 
   get '/profile/update' => 'profile#update'
@@ -27,4 +29,5 @@ Rails.application.routes.draw do
   post '/attendances' => 'attendances#create'
 
   get "*path", to: redirect('/')
+
 end
