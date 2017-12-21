@@ -7,9 +7,6 @@ class EventsListController < ApplicationController
     @user = current_user
     @events = Event.for(params[:keyword_search]).parsed_response["events"]["event"]
   end
-
-  def index
-  end
 end
 
 # EventfulApi.configure do |config|

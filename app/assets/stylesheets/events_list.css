@@ -13,7 +13,6 @@
   justify-content: center;
   align-items: center;
   min-height: 50vh;
-  margin-bottom: 20px;
 }
 
 .event-title-search input {
@@ -25,6 +24,8 @@
   display: flex;
   flex-flow: column nowrap;
   align-items: center;
+  background-color: black;
+  color: white;
 }
 
 .event-list-border {

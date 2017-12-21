@@ -4,13 +4,11 @@ class ProfileController < ApplicationController
   before_action :user_params, only: [:update_logic]
 
   def index
-<<<<<<< HEAD
+
     params.permit(:username, :first_name, :last_name, :date_of_birth, :phone_number, :email, :description, :image, :utf8, :_method, :authenticity_token, :commit)
     @user = current_user
-=======
-    @user = current_user
     @events = @user.event_tables.first
->>>>>>> 32beed092c8d06713d01f83ccbcd418ec8ea22d9
+
     render 'profile.html.erb'
   end
 
@@ -21,7 +19,7 @@ class ProfileController < ApplicationController
       @user.update(user_params)
       @user.save
     end
-    if
+    if params.has_key?(:username)
       @user.update(username: params[:username])
       @user.save
     end
@@ -53,13 +51,14 @@ class ProfileController < ApplicationController
      @user.update(image: params[:image])
      @user.save
     end
+
   end
 
-  def redirect
-    @user.save
-
+  def update_logic
+    params.permit(:username, :first_name, :last_name, :date_of_birth, :phone_number, :email, :description, :image, :utf8, :_method, :authenticity_token, :commit)
     respond_to do |format|
       if @user.update(user_params)
+        @user.save
         format.html { redirect_to profile_path, notice: 'Profile was successfully updated.' }
       else
         format.html { render :edit }
