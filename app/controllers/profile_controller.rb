@@ -4,8 +4,13 @@ class ProfileController < ApplicationController
   before_action :user_params, only: [:update_logic]
 
   def index
+<<<<<<< HEAD
     params.permit(:username, :first_name, :last_name, :date_of_birth, :phone_number, :email, :description, :image, :utf8, :_method, :authenticity_token, :commit)
     @user = current_user
+=======
+    @user = current_user
+    @events = @user.event_tables.first
+>>>>>>> 32beed092c8d06713d01f83ccbcd418ec8ea22d9
     render 'profile.html.erb'
   end
 
@@ -64,6 +69,7 @@ class ProfileController < ApplicationController
 
 
   def profile
+
   end
 end
 
