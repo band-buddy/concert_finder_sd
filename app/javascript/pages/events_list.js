@@ -6,8 +6,11 @@ export default class EventsList extends Component {
     super(props)
     this.state = {
       // events: this.props.events ? this.props.events.events.event : []
-      events: this.props.events
+      events: this.props.events,
+      // user: this.props.user
     }
+    var user = this.props.user
+    
   }
 
   render(){

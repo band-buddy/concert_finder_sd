@@ -11,7 +11,8 @@
           </form>
         </section>
         <section class="event-listing">
-        <%= react_component('EventsList', events: @events) %>
+        <%= react_component('EventsList', events: @events, current_user: current_user) %>
+        <% react_component('Events', current_user: current_user) %>
         </section>
       </main>
     </body>
