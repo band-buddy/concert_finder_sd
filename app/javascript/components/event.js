@@ -10,15 +10,22 @@ const customStyles = {
 };
 
 export default class Events extends Component {
-
+  constructor(props){
+    super(props)
+    this.state = {
+      user: this.props.user
+    }
+  }
    render(){
      function addEvent(){
        var profile_event = {title: event.title, start_time: event.start_time, venue: event.venue_name}
        console.log(profile_event)
      }
      var event = this.props.event
+     var current_user = this.props.user
      var lat = parseFloat(event.latitude)
      var long = parseFloat(event.longitude)
+
      return(
       <li className="event-list-border">
         <h3>{lat} {event.longitude}</h3>
@@ -38,8 +45,10 @@ export default class Events extends Component {
             country={event.country_abbr}
             postal={event.postal_code}
             description={event.description}
+            user = {this.props.user}
             latitude={lat}
             longitude={long}
+
             style={customStyles}
           />
 

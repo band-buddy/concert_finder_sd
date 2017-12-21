@@ -30,7 +30,7 @@ export default class Pop extends Component {
   constructor(props) {
     super(props);
     this.state = {
-      ModalIsOpen: false
+      ModalIsOpen: false,
     };
 
     this.openModal = this.openModal.bind(this);
@@ -78,6 +78,7 @@ export default class Pop extends Component {
             <input type="hidden" value={this.props.time} name="date" />
             <input type="hidden" value={this.props.venue} name="venue" />
             <input type="hidden" value={this.props.id} name="eventful_identifier" />
+
             <input className="modal_button" type="submit" value="Add to profile!" />
           </form>
           <Map

@@ -4,6 +4,8 @@ class ProfileController < ApplicationController
   before_action :user_params, only: [:update_logic]
 
   def index
+    @user = current_user
+    @events = @user.event_tables.first
     render 'profile.html.erb'
   end
 
@@ -69,6 +71,7 @@ class ProfileController < ApplicationController
   end
 
   def profile
+
   end
 end
 
