@@ -5,7 +5,7 @@ class EventsListController < ApplicationController
 
   def events
     @user = current_user
-    @events = Event.for(params[:keyword_search]).parsed_response["events"]["event"]
+    @events = Event.for(params[:keyword_search]).parsed_response.dig("events", "event")
   end
 end
 

@@ -10,15 +10,19 @@ export default class EventsList extends Component {
       // user: this.props.user
     }
     var user = this.props.user
-    
+
   }
 
   render(){
-    var events = this.state.events.map((event, i)=>{
-      return (
-        <Events key={i} event={event} />
-      )}
-    )
+    if(this.state.events != null && this.state.events.length > 0){
+      var events = this.state.events.map((event, i)=>{
+        return (
+          <Events key={i} event={event} />
+        )}
+      )
+    } else {
+      var events = "no results"
+    }
     return(
       <ul className="events-list">
         {events}
