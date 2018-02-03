@@ -42,6 +42,7 @@ input {
   border: none;
   padding: 5px;
   text-decoration: none;
+  text-align: left;
 }
 
 input:focus {
@@ -52,17 +53,20 @@ input:-webkit-autofill {
     -webkit-box-shadow: 0 0 0 30px white inset;
 }
 
-h1, h2, h3, h4 {
-  font-family: 'Open Sans', Arial, helvetica, sans-serif;
+h2, h3, h4 {
+  font-family: 'oxygen', Arial, helvetica, sans-serif;
 }
 
 h1 {
-  font-size: 5.0rem;
+  font-family: 'Lobster', cursive;
+  letter-spacing: 2px;
+  font-size: 5.5rem;
   color: white;
 }
 
 h2 {
-  font-size: 3.0rem;
+  font-size: 2.5rem;
+  line-height: 120%;
   padding-bottom: .5em;
 }
 

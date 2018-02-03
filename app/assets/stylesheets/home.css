@@ -11,11 +11,27 @@
   flex-direction: column;
   justify-content: center;
 }
-.home-search-bar {
-  width: 600px;
-  font-size: .5em;
-  text-align: center;
+
+.home-header {
+  margin-bottom: 20px;
 }
+.home-search-bar {
+  background-image: url(https://image.ibb.co/mQSo16/search_icon_hi.png);
+  background-repeat: no-repeat;
+  background-position: 368px;
+  background-size: 21px 21px;
+  width: 400px;
+  font-size: .4em;
+  padding: 7px;
+  color: white;
+  background-color: #5b5b62;
+  border: 3px solid #47474f;
+}
+
+.home-search-bar::placeholder {
+  color: #bdc3c7;
+}
+
 .home-cards-section {
     padding: 40px;
 }
