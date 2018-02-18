@@ -11,6 +11,7 @@ export default class Home extends Component{
     }
   }
 
+
   render (){
     return(
         <div>
@@ -18,7 +19,8 @@ export default class Home extends Component{
             <h1 className="fade-text h1-media-query home-header">Band Surf</h1>
             <h2 className="fade-text h2-media-query">Find the best concerts in San Diego.<br />Make new friends.</h2>
             <form action="events" method="get">
-              <input className="home-search-bar" name="keyword_search" type='text' placeholder="Search events by band or venue..."/><br></br>
+              <input className="home-search-bar" name="keyword_search" type='text' placeholder="Search events by band or venue..."/>
+              <button className="home-search-events-button"><i id="home-search-button" className="fa fa-search"></i></button>
             </form>
           </div>
           <div className="home-cards-section">
