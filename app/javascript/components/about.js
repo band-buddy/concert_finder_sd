@@ -15,7 +15,7 @@ export default class About extends Component {
           name: "Ryan Wehr",
           image: "/assets/Ryan-W.png",
           description: "Ryan is our San Diegan native. When he's not busy creating cool apps, well, he's busy writing other code in his Minecraft server. But, like the rest of us, he digs music.",
-          current: ""
+          current: "https://open.spotify.com/embed/album/5OZJflQcQCdZLQjtUudCin"
         },
         {
           name: "Veronica Basch",
