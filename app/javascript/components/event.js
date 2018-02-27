@@ -16,7 +16,12 @@ export default class Events extends Component {
       user: this.props.user
     }
   }
+
    render(){
+     function added_to_profile() {
+         alert("Event added to profile!")
+     }
+
      function addEvent(){
        var profile_event = {title: event.title, start_time: event.start_time, venue: event.venue_name}
      }
@@ -50,12 +55,11 @@ export default class Events extends Component {
             style={customStyles}
           />
 
-          <form action="/attendances" method="post">
+          <form action="/attendances" method="post" onSubmit={added_to_profile} >
             <input type="hidden" value={event.title} name="title" />
             <input type="hidden" value={event.start_time} name="date" />
             <input type="hidden" value={event.venue_name} name="venue" />
             <input type="hidden" value={event.id} name="eventful_identifier" />
-
             <input className="modal_button" type="submit" value="Add to profile!" />
           </form>
         </div>

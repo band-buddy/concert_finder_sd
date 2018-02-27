@@ -28,6 +28,16 @@
   color: white;
 }
 
+.no_results {
+  display: flex;
+  flex-flow: column nowrap;
+  align-items: center; */
+  text-align: center;
+  background-color: black;
+  color: white;
+  padding-bottom: 125px;
+}
+
 .event-list-border {
   margin: 5px;
   padding: 30px 10px;

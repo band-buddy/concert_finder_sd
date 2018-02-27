@@ -7,10 +7,9 @@ export default class EventsList extends Component {
     this.state = {
       // events: this.props.events ? this.props.events.events.event : []
       events: this.props.events,
-      // user: this.props.user
+      user: this.props.user
     }
     var user = this.props.user
-
   }
 
   render(){
@@ -24,7 +23,15 @@ export default class EventsList extends Component {
       //   return a.start_time > b.start_time
       // })
     } else {
-      var events = "Sorry, there are no results!"
+
+      var events = "No results"
+      return (
+        <div className="no_results">
+          <p>No results</p><br />
+          <a href="/events">Return to Events List</a>
+        </div>
+      );
+
     }
     return(
       <ul className="events-list">
