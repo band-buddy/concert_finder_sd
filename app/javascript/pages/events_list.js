@@ -18,8 +18,11 @@ export default class EventsList extends Component {
       var events = this.state.events.map((event, i)=>{
         return (
           <Events key={i} event={event} />
-        )}
-      )
+        )
+      })
+      // var sorted_events = events.sort(function(a, b){
+      //   return a.start_time > b.start_time
+      // })
     } else {
       var events = "no results"
     }
