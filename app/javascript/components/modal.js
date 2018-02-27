@@ -7,9 +7,9 @@ import GoogleMap from 'google-map-react';
 
 const customStyles = {
   content : {
-    top    : '50%',
+    top    : '65em',
     left   : '50%',
-    right  : '600px',
+    right  : '100px',
     bottom : 'auto',
     marginRight : '-50%',
     transform : 'translate(-50%, -50%)',
@@ -17,12 +17,15 @@ const customStyles = {
     color : '#2D2D2D'
   },
   overlay : {
-  position          : 'fixed',
-  top               : 0,
-  left              : 0,
-  right             : 0,
-  bottom            : 0,
-  backgroundColor   : 'rgba(114, 28, 119, .6)',
+    height            : '100%',
+    minWidth          : '300px',
+    // position          : 'absolute',
+    overflow          : 'scroll',
+    top               : 0,
+    left              : 0,
+    right             : 0,
+    bottom            : 0,
+    backgroundColor   : 'rgba(114, 28, 119, .6)',
   }
 };
 
