@@ -1,13 +1,12 @@
-<!DOCTYPE html>
-<html>
+<%= content_for(:title, 'Events' ) %>
   <div id="full_page">
     <body class="event-body">
       <main class="event-background">
         <section class="event-title-search">
-          <h1 class="h1-media-query" >Events</h1>
+          <h1 class="h1-media-query events-header" >Events</h1>
           <form action="/events" method="get">
             <input class="event-search-bar" type="text" name="keyword_search" placeholder="Search by event or band"/>
-            <button type="submit">Submit</button>
+            <button type="submit" class="event-search-events-button"><i id="home-search-button" class="fa fa-search"></i></button>
           </form>
         </section>
         <section class="event-listing">
@@ -17,4 +16,3 @@
       </main>
     </body>
   </div>
-</html>

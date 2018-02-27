@@ -20,6 +20,7 @@ export default class EventsList extends Component {
         )}
       )
     } else {
+
       var events = "No results"
       return (
         <div className="no_results">
@@ -27,6 +28,7 @@ export default class EventsList extends Component {
           <a href="/events">Return to Events List</a>
         </div>
       );
+
     }
     return(
       <ul className="events-list">

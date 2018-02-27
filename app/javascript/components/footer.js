@@ -12,7 +12,7 @@ export default class Footer extends Component {
         },
         {
           name: "Press",
-          link: "#"
+          link: "/press"
         }
       ]
     }
@@ -36,7 +36,7 @@ export default class Footer extends Component {
           <p>Created by theSpliceGirls &#169;2017</p>
         </div>
         <div>
-        <p><a href="#">Terms</a> | <a href="#">Privacy</a></p>
+        <p><a href="/terms">Terms</a> | <a href="/privacy">Privacy</a></p>
         </div>
       </footer>
     )
