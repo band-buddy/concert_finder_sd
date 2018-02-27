@@ -26,6 +26,12 @@ Rails.application.routes.draw do
 
   get '/about' => 'public#about'
 
+  get '/terms' => 'public#terms'
+
+  get '/privacy' => 'public#privacy'
+
+  get '/press' => 'public#press'
+
   post '/attendances' => 'attendances#create'
 
   get "*path", to: redirect('/')

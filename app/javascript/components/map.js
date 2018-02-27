@@ -21,7 +21,7 @@ export default class Map extends Component {
       <div style={{width: '100%', height: '400px'}}>
         <GoogleMap
           bootstrapURLKeys={{key: 'AIzaSyAAuaeLQhFzpsIMndOjomyCQyCCJN_V4PI'}}
-          center={[this.props.latitude,this.props.longitude]}
+          center={[this.props.latitude, this.props.longitude]}
           zoom={16}
         >
         {this.state.pin.map((pinProps)=>{
