@@ -1,0 +1,13 @@
+.press {
+  padding: 80px 80px 420px 80px;
+  background-image: url(/assets/press.jpg);
+  background-repeat: no-repeat;
+  background-position: 0px -82px;
+  background-size: cover;
+  min-height: 60vh;
+}
+.text {
+  text-align: center;
+  color: black;
+  padding-top: 375px !important;
+}

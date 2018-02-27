@@ -49,6 +49,7 @@
 .flex-card-heading {
   display: flex;
   flex-direction: column;
+  text-align: center;
   height: 100%;
   padding: 5px 8px 15px 8px;
   max-width: 400px;

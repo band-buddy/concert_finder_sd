@@ -21,7 +21,7 @@ export default class EventsList extends Component {
         )}
       )
     } else {
-      var events = "no results"
+      var events = "Sorry, there are no results!"
     }
     return(
       <ul className="events-list">

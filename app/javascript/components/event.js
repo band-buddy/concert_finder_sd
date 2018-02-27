@@ -19,7 +19,6 @@ export default class Events extends Component {
    render(){
      function addEvent(){
        var profile_event = {title: event.title, start_time: event.start_time, venue: event.venue_name}
-       console.log(profile_event)
      }
      var event = this.props.event
      var current_user = this.props.user

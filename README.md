@@ -1,24 +1,64 @@
-# README
+# Band Surf
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+## App Information
+* Built with Webpacker-React (Reactjs -v 16.2.0) and Ruby on Rails 5.1.4 on Postgresql
+* Before starting up, you will need to install yarn 1.3.2
+* Before starting up, you will need the latest version of Postgresql on you machine
 
-Things you may want to cover:
+## Getting Started
 
-* Ruby version
+1. Clone the repo to your local machine
 
-* System dependencies
+```
+$ git clone https://github.com/band-buddy/concert_finder_sd.git
+```
 
-* Configuration
+2. Make sure you're on master branch on your local machine
 
-* Database creation
+```
+$ git branch
+```
 
-* Database initialization
+3. Pull master from repo to master branch on your local machine
 
-* How to run the test suite
+```
+$ git pull origin master
+```
 
-* Services (job queues, cache servers, search engines, etc.)
+4. Create a new git branch on your local machine and cd into project
 
-* Deployment instructions
+```
+$ git checkout -b New-Branch-Name
+$ cd concert_finder_sd
+```
 
-* ...
+5. run bundle to install any gem dependencies you may need.
+
+```
+$ bundle 
+```
+
+6. Create and migrate your database
+
+```
+$ rails db:create
+$ rails db:migrate
+```
+
+7. run yarn 
+```
+$ yarn
+```
+
+8. Start the rails server
+```
+$ rails s
+```
+
+## Pushing new branch changes to Github
+
+
+
+
+
+
