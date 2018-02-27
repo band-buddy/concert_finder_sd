@@ -19,11 +19,14 @@
   width: 350px;
   font-size: .4em;
   padding: 7px;
-  color: white;
-  background-color: #5b5b62;
-  border-left: 3px solid #47474f;
-  border-bottom: 3px solid #47474f;
-  border-top: 3px solid #47474f;
+  color: #333333;
+  background-color: white;
+  border-left: 3px solid #707070;
+  border-bottom: 3px solid #707070;
+  border-top: 3px solid #707070;
+  border-radius: 0px;
+  border-top-left-radius: 5px;
+  border-bottom-left-radius: 5px;
 }
 
 .home-search-bar::placeholder {
@@ -33,10 +36,10 @@
 .home-search-events-button {
   position: relative;
   bottom: 1px;
-  background-color: #5b5b62;
-  border-right: 3px solid #47474f;
-  border-bottom: 3px solid #47474f;
-  border-top: 3px solid #47474f;
+  background-color: white;
+  border-right: 3px solid #707070;
+  border-bottom: 3px solid #707070;
+  border-top: 3px solid #707070;
   padding: 9px;
   padding-top: 10px;
   border-radius: 0px;
@@ -47,6 +50,12 @@
 .home-cards-section {
     padding: 40px;
 }
+
+.fa-search{
+  color: #707070;
+}
+
+
 @keyframes fadeIn {
   from {
     opacity: 0;
@@ -85,11 +94,11 @@
 }
 @media only screen and (max-width: 760px) {
   .h1-media-query {
-    font-size: 3.5rem;
+    font-size: 3.8rem;
   }
 
   .h2-media-query {
-    font-size: 1.3rem;
+    font-size: 1.7rem;
   }
   .home-search-bar {
     width: 60%;

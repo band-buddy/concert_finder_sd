@@ -76,6 +76,9 @@
   border-left: 3px solid #47474f;
   border-bottom: 3px solid #47474f;
   border-top: 3px solid #47474f;
+  border-radius: 0px;
+  border-top-left-radius: 5px;
+  border-bottom-left-radius: 5px;
 }
 
 .event-search-events-button {
@@ -91,6 +94,10 @@
   border-radius: 0px;
   border-top-right-radius: 5px;
   border-bottom-right-radius: 5px;
+}
+
+.events-header {
+  padding-bottom: 10px;
 }
 
 @media only screen and (max-width: 1000px) {

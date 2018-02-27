@@ -16,7 +16,7 @@
 /*General Universal Selectors */
 
 html {
-  font-family: arial, helvetica, sans-serif;
+  font-family: 'Nunito', sans-serif;
   color: #2D2D2D;
 }
 
@@ -41,8 +41,7 @@ button:hover {
 input {
   font-size: 16px;
   outline: none;
-  border-top-left-radius: 5px;
-  border-bottom-left-radius: 5px;
+  border-radius: 5px;
   border: none;
   padding: 5px;
   text-decoration: none;
@@ -55,10 +54,6 @@ input:focus {
 
 input:-webkit-autofill {
     -webkit-box-shadow: 0 0 0 30px white inset;
-}
-
-h2, h3, h4 {
-  font-family: 'oxygen', Arial, helvetica, sans-serif;
 }
 
 h1 {
@@ -75,6 +70,8 @@ h2 {
 }
 
 h3 {
+  font-family: 'Raleway', sans-serif;
+  letter-spacing: 1px;
   font-size: 1.2rem;
 }
 
