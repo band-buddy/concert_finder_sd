@@ -25,8 +25,8 @@ export default class Events extends Component {
      function addEvent(){
        var profile_event = {title: event.title, start_time: event.start_time, venue: event.venue_name}
      }
-     var current_user = this.props.user
      var event = this.props.event
+     var current_user = this.props.user
      var lat = parseFloat(event.latitude)
      var long = parseFloat(event.longitude)
 
@@ -60,7 +60,7 @@ export default class Events extends Component {
             <input type="hidden" value={event.start_time} name="date" />
             <input type="hidden" value={event.venue_name} name="venue" />
             <input type="hidden" value={event.id} name="eventful_identifier" />
-            <input id="show_button" className="modal_button" type="submit" value="Add to profile!" />
+            <input className="modal_button" type="submit" value="Add to profile!" />
           </form>
         </div>
       </li>
