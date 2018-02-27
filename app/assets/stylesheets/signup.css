@@ -3,19 +3,26 @@
   background-image: url(/assets/sign-up.png);
   background-image: no-repeat;
   background-size: cover;
-  min-height: 100vh;
+  background-position: center center;
+  min-height: 200vh;
   min-width: 100vw;
   color: white;
-  padding-bottom: 50px;
 }
 
 .form-section {
   background-color: rgba(0,0,0,.6);
   position: absolute;
-  left: 9%;
+  left: 6%;
   top: 15%;
   border-radius: 5px;
   margin: auto;
   width: 350px;
   padding: 20px;
+}
+
+@media only screen and (max-width: 760px) {
+  li {
+    color: white;
+  }
+
 }

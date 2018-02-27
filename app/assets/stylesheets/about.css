@@ -1,8 +1,8 @@
 .about-section {
-  background: url('/assets/about-background.jpg') no-repeat;
+  background-color: #9646a1;
   background-size: cover;
   min-height: 50vh;
-  padding-top: 150px;
+  padding-top: 75px;
 }
 .meet-the-people {
   display: flex;
@@ -21,21 +21,23 @@
 	display: flex;
 	flex-direction: column;
   background-color: rgba(255, 255, 255, .9);
-  border: 1px solid #FFF;
-  margin: 40px 10px;
+  margin: 10px 40px 0px 10px;
   box-shadow: 0 0px 0px 0 rgba(0,0,0,0.2);
   border-radius: 5px;
   width: 305px;
-  padding: 20px;
+  padding: 0;
 }
 
 .flex-card:hover{
   box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
 }
 
+.event-card-heading {
+  padding: 7px 0 0 5px;
+}
+
 .event-card-image > img {
-  height: 250px;
-  width: 270px;
+  width: 100%;
   border-top-right-radius: 5px;
   border-top-left-radius: 5px;
 }
@@ -44,8 +46,10 @@
 	display:flex;
 	flex:1;
 	flex-direction:column;
-  margin: 10px 0px 10px 0px;
+  margin: 0px 0px 7px 0px;
   max-width: 400px;
+  padding: 0px 0px 0 5px;
+
 }
 
 @media only screen and (max-width: 1000px) {
