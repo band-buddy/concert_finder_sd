@@ -24,6 +24,8 @@ gem 'paperclip'
 gem 'devise'
 
 gem 'omniauth-facebook'
+
+gem 'bcrypt', platforms: :ruby
 # See https://github.com/rails/execjs#readme for more supported runtimes
 # gem 'therubyracer', platforms: :ruby
 gem 'textacular'
