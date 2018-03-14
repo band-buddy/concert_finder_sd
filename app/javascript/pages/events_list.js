@@ -17,9 +17,13 @@ export default class EventsList extends Component {
       var events = this.state.events.map((event, i)=>{
         return (
           <Events key={i} event={event} />
-        )}
-      )
+        )
+      })
+      // var sorted_events = events.sort(function(a, b){
+      //   return a.start_time > b.start_time
+      // })
     } else {
+
       var events = "No results"
       return (
         <div className="no_results">
@@ -27,6 +31,7 @@ export default class EventsList extends Component {
           <a href="/events">Return to Events List</a>
         </div>
       );
+
     }
     return(
       <ul className="events-list">

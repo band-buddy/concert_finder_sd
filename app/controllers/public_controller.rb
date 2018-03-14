@@ -1,5 +1,4 @@
 class PublicController < ApplicationController
-  # before_action :authenticate_user!
     def index
       @events = Event.for(params[:keyword_search]).parsed_response["events"]["event"]
     end
@@ -7,7 +6,17 @@ class PublicController < ApplicationController
     def about
     end
 
-    def update
-
+    def terms
     end
+
+    def privacy
+    end
+
+    def press
+    end 
+
+    def update
+    end
+
+
 end

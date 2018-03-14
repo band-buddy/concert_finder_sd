@@ -1,0 +1,21 @@
+.privacy {
+
+    padding: 80px 80px 420px 80px;
+    background-image: url(/assets/drone.jpg);
+    background-repeat: no-repeat;
+    background-position: 0px -150px;
+    background-size: cover;
+    min-height: 80vh;
+    background-position: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.CALOPPA {
+  padding-right: 300px;
+}
+
+.header {
+  text-align: center;
+}
