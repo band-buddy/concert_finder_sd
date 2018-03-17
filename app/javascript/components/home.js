@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 import Header from 'components/header.js';
 import Footer from 'components/footer.js'
-import AppInfo from 'components/appinfo.js';
+import AppInfo from 'components/appInfo.js';
 
 export default class Home extends Component{
   constructor(props){
